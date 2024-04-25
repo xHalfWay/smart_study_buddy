@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация нового пользователя</title>
+    <link rel="stylesheet" href="{% static 'auth_styles.css' %}">
+</head>
+<body>
+    <form method="post">
+        <center><h2>Регистрация нового пользователя</h2></center>
+        {% csrf_token %}
+        <label for="username">Логин пользователя <span>*</span></label><br>
+        {% if form.errors.username %}
+        <p class="error">{{ form.errors.username }}</p>
+        {% endif %}
+        <input type="text" placeholder="Введите логин" id="username" name="username"><br>
+        <label for="password1">Пароль <span>*</span></label><br>
+        <input type="password" placeholder="Введите пароль" id="password1" name="password1"><br>
+        <label for="password2">Повторите пароль <span>*</span></label><br>
+        <input type="password" placeholder="Повторите пароль" id="password2" name="password2"><br>
+        {% for error in form.password2.errors %}
+        <p class="error">{{ error }}</p>
+        {% endfor %}
+        <select id="group" name="group" class="group">
+            <option value="Учитель">Учитель</option>
+            <option value="Ученик">Ученик</option>
+        </select>             
+        <br>
+        <input type="submit" value="Зарегистрироваться">
+        <a href="{% url 'index' %}" class="return-btn">Вернуться на главную</a>
+        <p class="form-caption">Уже зарегистрированы? <a href="{% url 'login' %}">Войти</a></p>
+    </form>
+</body>
+</html>

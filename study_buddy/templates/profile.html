@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль пользователя</title>
+    <link rel="stylesheet" href="{% static 'profile.css' %}">
+</head>
+<body>
+    <div class="user-info-container">
+        {% if user.is_authenticated %}
+            <h1>Профиль пользователя</h1>
+            <p>Добро пожаловать, {{ user.username }}!</p>
+            <p>Роль: {{ user_role }}</p>  
+            {% if user.groups.all.0.name == 'Учитель' %}
+            <a href="{% url 'task_creation' %}" class="task-creation-btn">Создание заданий</a>
+            {% endif %}
+            <a href="{% url 'change_password' %}" class="change-password-btn">Изменить пароль</a>
+            <a href="{% url 'logout' %}" class="logout-btn">Выйти</a>
+        {% else %}
+            <p>Авторизуйтесь, чтобы войти в профиль.</p>
+            <a href="{% url 'login' %}" class="login-btn" hidden>Вход</a>
+        {% endif %}
+        <a href="{% url 'index' %}" class="return-btn">Вернуться на главную страницу</a>
+    </div>
+</body>
+</html>

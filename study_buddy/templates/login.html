@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="{% static 'auth_styles.css' %}">
+</head>
+<body>
+    <form method="post">
+        <center><h2>Авторизация</h2></center>
+        {% csrf_token %}
+        {% if form.non_field_errors %}
+        <p class="error">{{ form.non_field_errors }}</p>
+        {% endif %}
+        <label for="username">Логин пользователя <span>*</span></label><br>
+        {% if form.errors.username %}
+        <p class="error">{{ form.errors.username }}</p>
+        {% endif %}
+        <input type="text" placeholder="Введите логин" id="username" name="username"><br>
+        <label for="password">Пароль <span>*</span></label><br>
+        {% if form.errors.password %}
+        <p class="error">{{ form.errors.password }}</p>
+        {% endif %}
+        <input type="password" placeholder="Введите пароль" id="password" name="password"><br>
+        <input type="submit" value="Войти">
+        <a href="{% url 'index' %}" class="return-btn">Вернуться на главную</a>
+        <p class="form-caption">У вас еще нет аккаунта? <a href="{% url 'register' %}">Зарегистрируйтесь</a></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание заданий</title>
+    <link rel="stylesheet" href="{% static 'task_creation_styles.css' %}">
+</head>
+<body>
+    <h2>Создание заданий</h2>
+    <div class="task-type-selection">
+        <h3>Выберите тип задания:</h3>
+        <!-- Карточка для типа задания "Найти пару" -->
+        <div class="task-type-card">
+            <h4>Найти пару</h4>
+            <img src="{% static 'find_pair_image.jpg' %}" alt="Find Pair Image">
+            <a href="{% url 'find_pair_task_creation' %}" class="create-task-btn">Create</a>
+        </div>
+
+        <!-- Карточка для типа задания "Заполни пропуски" -->
+        <div class="task-type-card">
+            <h4>Заполнить пропуски</h4>
+            <img src="{% static 'fill_blanks_image.jpg' %}" alt="Fill Blanks Image">
+            <a href="{% url 'fill_blanks_task_creation' %}" class="create-task-btn">Create</a>
+        </div>
+    </div>
+    <a href="{% url 'profile' %}" class="return-profile-btn">Back to Profile</a>
+</body>
+</html>

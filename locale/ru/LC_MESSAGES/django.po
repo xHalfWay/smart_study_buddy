@@ -1,0 +1,2 @@
+msgid "A user with that username already exists."
+msgstr "Пользователь с таким именем уже существует."

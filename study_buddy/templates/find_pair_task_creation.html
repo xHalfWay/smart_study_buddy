@@ -1,0 +1,187 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Pair Task Creation</title>
+    <link rel="stylesheet" href="{% static 'find_pair_task_creation.css' %}">
+    <style>
+        .element p {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 8px;
+        }
+
+        .close-btn {
+            margin-left: 5px;
+        }
+
+        .text-input,
+        .file-input {
+            margin-top: 5px;
+            display: block;
+        }
+
+        .navigation-links {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Название упражнения</h2>
+    <div class="exercise-title-input">
+        <input type="text" id="title" name="title">
+    </div>
+
+    <h3>Описание задания</h3>
+    <p>Введите описание задания. Оно будет появляться в начале упражнения. Если это не нужно, оставьте это поле пустым.</p>
+    <div class="exercise-description-input">
+        <textarea id="description" name="description" rows="4" cols="50"></textarea>
+    </div>
+
+    <h3>Пары</h3>
+    <div class="pairs-container">
+        <div class="pair">
+            <h4>Пара 1</h4>
+            <div class="element">
+                <p>Первый элемент пары:</p>
+                <button class="content-btn text-btn" data-type="text">Текст</button>
+                <button class="content-btn image-btn" data-type="image">Картинка</button>
+            </div>
+            <div class="element">
+                <p>Второй элемент пары:</p>
+                <button class="content-btn text-btn" data-type="text">Текст</button>
+                <button class="content-btn image-btn" data-type="image">Картинка</button>
+            </div>
+        </div>
+    </div>
+    <button class="add-pair-btn">Добавить новую пару</button>
+    <button class="remove-pair-btn">Удалить пару</button>
+
+    <form method="post" action="{% url 'create_find_pair_task' %}">
+        {% csrf_token %}
+        <button class="finish-btn">Завершить и показать в предварительном режиме</button>
+    </form>
+    
+    <div class="navigation-links">
+        <a href="{% url 'task_creation' %}">Назад к выбору типа задания</a>
+        <a href="{% url 'profile' %}">В профиль</a>
+    </div>
+
+    <script>
+        let pairCount = 1;
+
+        document.querySelector('.add-pair-btn').addEventListener('click', function() {
+            const pairsContainer = document.querySelector('.pairs-container');
+            const pair = document.createElement('div');
+            pair.classList.add('pair');
+            pair.innerHTML = `
+                <h4>Пара ${++pairCount}</h4>
+                <div class="element">
+                    <p>Первый элемент пары:</p>
+                    <button class="content-btn text-btn" data-type="text">Текст</button>
+                    <button class="content-btn image-btn" data-type="image">Картинка</button>
+                </div>
+                <div class="element">
+                    <p>Второй элемент пары:</p>
+                    <button class="content-btn text-btn" data-type="text">Текст</button>
+                    <button class="content-btn image-btn" data-type="image">Картинка</button>
+                </div>
+            `;
+            pairsContainer.appendChild(pair);
+            initializeContentButtons(pair);
+        });
+
+        document.querySelector('.remove-pair-btn').addEventListener('click', function() {
+            const pairsContainer = document.querySelector('.pairs-container');
+            const pairs = pairsContainer.querySelectorAll('.pair');
+            if (pairs.length > 1) {
+                pairs[pairs.length - 1].remove();
+                pairCount--;
+            }
+        });
+
+        function initializeContentButtons(pair) {
+            const textButtons = pair.querySelectorAll('.text-btn');
+            const imageButtons = pair.querySelectorAll('.image-btn');
+
+            textButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const parentElement = this.parentElement;
+                    disableContentButtons(parentElement, '.text-btn');
+                    disableContentButtons(parentElement, '.image-btn');
+                    enableContentButtons(parentElement, '.text-btn');
+                    openTextInput(parentElement);
+                });
+            });
+
+            imageButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const parentElement = this.parentElement;
+                    disableContentButtons(parentElement, '.image-btn');
+                    disableContentButtons(parentElement, '.text-btn');
+                    enableContentButtons(parentElement, '.image-btn');
+                    openFileInput(parentElement);
+                });
+            });
+        }
+
+        function openTextInput(parentElement) {
+            if (parentElement.querySelector('.text-input')) return;
+            const textInput = document.createElement('input');
+            textInput.setAttribute('type', 'text');
+            textInput.classList.add('text-input');
+
+            const closeButton = document.createElement('button');
+            closeButton.textContent = 'Закрыть';
+            closeButton.classList.add('close-btn');
+            closeButton.addEventListener('click', function() {
+                parentElement.removeChild(textInput);
+                parentElement.removeChild(closeButton);
+                enableContentButtons(parentElement, '.text-btn');
+                enableContentButtons(parentElement, '.image-btn');
+            });
+
+            parentElement.appendChild(textInput);
+            parentElement.appendChild(closeButton);
+        }
+
+        function openFileInput(parentElement) {
+            if (parentElement.querySelector('.file-input')) return;
+            const fileInput = document.createElement('input');
+            fileInput.setAttribute('type', 'file');
+            fileInput.classList.add('file-input');
+
+            const closeButton = document.createElement('button');
+            closeButton.textContent = 'Закрыть';
+            closeButton.classList.add('close-btn');
+            closeButton.addEventListener('click', function() {
+                parentElement.removeChild(fileInput);
+                parentElement.removeChild(closeButton);
+                enableContentButtons(parentElement, '.text-btn');
+                enableContentButtons(parentElement, '.image-btn');
+            });
+
+            parentElement.appendChild(fileInput);
+            parentElement.appendChild(closeButton);
+        }
+
+        function disableContentButtons(parentElement, buttonClass) {
+            const buttons = parentElement.querySelectorAll(buttonClass);
+            buttons.forEach(btn => {
+                btn.disabled = true;
+            });
+        }
+
+        function enableContentButtons(parentElement, buttonClass) {
+            const buttons = parentElement.querySelectorAll(buttonClass);
+            buttons.forEach(btn => {
+                btn.disabled = false;
+            });
+        }
+
+        initializeContentButtons(document.querySelector('.pair'));
+    </script>
+</body>
+</html>
