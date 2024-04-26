@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    background-image: url('/static/profile_background.jpg');
+}
+
+#create_task_form {
+    margin-top: 10vh;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgba(255, 255, 255, .5);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    font-size: 1.2em;
+    text-shadow: #454545 0 0 2px;
+    color: white;
+    text-align: center;
+}
+
+#create_task_form h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+}
+
+#create_task_form p {
+    margin-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#create_task_form .create-task-btn {
+    display: block;
+    width: calc(100% - 10px); 
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #35c3dc; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#create_task_form .create-task-btn:hover {
+    background-color: #0056b3; 
+}
+
+
+
+.pair .remove-pair-btn {
+    display: block;
+    width: calc(100% - 10px); 
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #dc3545; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.pair .remove-pair-btn:hover {
+    background-color: #c82333; 
+}
+
+.add-pair-btn {
+    display: block;
+    width: calc(100% - 10px); 
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #35dc75; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.add-pair-btn:hover {
+    background-color: #176635;
+}
+
+.pair {
+    margin-bottom: 20px;
+}
+
+.pair label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.pair select,
+.pair input[type="text"],
+.pair input[type="file"] {
+    width: calc(100% - 22px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pair label {
+    font-size: 1.2em;
+    text-shadow: #454545 0 0 2px;
+    color: white;
+}
+
+.pair input[type="text"],
+.pair input[type="file"],
+.pair select {
+    background-color: #f9f9f9;
+}
+
+#task_title,
+#task_description {
+    width: calc(100% - 22px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.create-task-link {
+    display: block; 
+    width: calc(100% - 50px); 
+    padding: 10px 20px;
+    margin-top: 100px; 
+    background-color: rgb(34, 33, 31);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    text-align: center; 
+}
+
+.create-task-link:hover {
+    background-color: #c15443;
+}

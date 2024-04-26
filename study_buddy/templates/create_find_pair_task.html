@@ -1,0 +1,19 @@
+{% load static %}
+<form id="create_task_form" class="create-task-form" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+    {% csrf_token %}
+    <link rel="stylesheet" href="{% static 'create_find_pair_task.css' %}">
+    <label for="task_title" class="label">Название задания:</label><br>
+    <input type="text" id="task_title" name="task_title" required><br>
+    <label for="task_description" class="label">Описание задания:</label><br>
+    <textarea id="task_description" name="task_description"></textarea><br>
+    
+    <div id="pairs_container">
+        <!-- Здесь будут добавляться пары -->
+    </div>
+    
+    <button type="button" class="add-pair-btn" onclick="addPair()">Добавить пару</button>
+    <button type="submit" class="create-task-btn">Создать задание</button>
+    <a href="{% url 'task_creation' %}" class="create-task-link">Назад</a>
+</form>
+
+<script src="{% static 'js/create_find_pair.js' %}"></script>

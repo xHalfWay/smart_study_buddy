@@ -2,7 +2,6 @@ from django import forms
 from django.contrib.auth.models import User, Group
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.forms import UserChangeForm
-from study_buddy.models import FindPairTask, PairElement
 
 class RegistrationForm(UserCreationForm):
     group_choices = [(group.id, group.name) for group in Group.objects.all()]  
@@ -31,13 +30,3 @@ class ChangePasswordForm(forms.Form):
     new_password1 = forms.CharField(label="Новый пароль", widget=forms.PasswordInput)
     new_password2 = forms.CharField(label="Подтвердите новый пароль", widget=forms.PasswordInput)
 
-# реализация найди пару
-class FindPairTaskForm(forms.ModelForm):
-    class Meta:
-        model = FindPairTask
-        fields = ['title', 'description']
-
-class PairElementForm(forms.ModelForm):
-    class Meta:
-        model = PairElement
-        fields = ['first_element', 'second_element']

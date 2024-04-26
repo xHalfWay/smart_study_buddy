@@ -6,12 +6,9 @@ from django.contrib.auth.models import User, Group
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
-#найди пару
-from django.shortcuts import render, redirect
-from .forms import FindPairTaskForm, PairElementForm
-from django.contrib.auth.decorators import login_required
-from study_buddy.models import FindPairTask
-
+from django.urls import reverse_lazy
+from study_buddy.models import Task, Pair
+from django.contrib import messages
 
 def register_view(request):
     if request.method == 'POST':
@@ -118,37 +115,33 @@ def change_password_view(request):
 def task_creation(request):
     return render(request, 'task_creation.html')
 
-def find_pair_task_creation(request):
-    return render(request, 'find_pair_task_creation.html')
-
-def fill_blanks_task_creation(request):
-    return render(request, 'fill_blanks_task_creation.html')
-
-def pair_creation(request):
-    return render(request, 'pair_creation.html')
-
-
-@login_required
 def create_find_pair_task(request):
     if request.method == 'POST':
-        task_form = FindPairTaskForm(request.POST)
-        pair_form = PairElementForm(request.POST)
-        if task_form.is_valid() and pair_form.is_valid():
-            task = task_form.save(commit=False)
-            task.author = request.user
-            task.save()
-            pair = pair_form.save(commit=False)
-            pair.task = task
-            pair.save()
-            return redirect('preview_find_pair_task', task_id=task.pk)
-    else:
-        task_form = FindPairTaskForm()
-        pair_form = PairElementForm()
-    return render(request, 'find_pair_task_creation.html', {'task_form': task_form, 'pair_form': pair_form})
+        task_title = request.POST['task_title']
+        task_description = request.POST['task_description']
+        task = Task.objects.create(title=task_title, description=task_description)
 
-@login_required
-def preview_find_pair_task(request, task_id):
-    task = FindPairTask.objects.get(pk=task_id)
-    pairs = task.pairs.all()
-    return render(request, 'preview_find_pair_task.html', {'task': task, 'pairs': pairs})
+        saved_pairs = set()  
+        for key, value in request.POST.items():
+            if key.startswith('pair_'):
+                pair_num = key.split('_')[1]
+                first_text = request.POST.get(f'pair_{pair_num}_first_text')
+                first_image = request.FILES.get(f'pair_{pair_num}_first_image')
+                second_text = request.POST.get(f'pair_{pair_num}_second_text')
+                second_image = request.FILES.get(f'pair_{pair_num}_second_image')
+
+                if (first_text, first_image, second_text, second_image) not in saved_pairs:
+                    Pair.objects.create(
+                        task=task,
+                        first_element_text=first_text,
+                        first_element_image=first_image,
+                        second_element_text=second_text,
+                        second_element_image=second_image
+                    )
+                    saved_pairs.add((first_text, first_image, second_text, second_image))
+
+        messages.success(request, 'Задание успешно создано!')
+        return redirect(reverse_lazy('task_creation'))  
+
+    return render(request, 'create_find_pair_task.html')
 

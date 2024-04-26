@@ -5,26 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Создание заданий</title>
-    <link rel="stylesheet" href="{% static 'task_creation_styles.css' %}">
+    <link rel="stylesheet" href="{% static 'custom_styles.css' %}">
 </head>
 <body>
-    <h2>Создание заданий</h2>
+    {% if messages %}
+        <div class="alert-container">
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+    
+    <h2>Страница создания нового задания</h2>
+    <h3>Выберите тип задания:</h3> 
     <div class="task-type-selection">
-        <h3>Выберите тип задания:</h3>
         <!-- Карточка для типа задания "Найти пару" -->
         <div class="task-type-card">
             <h4>Найти пару</h4>
             <img src="{% static 'find_pair_image.jpg' %}" alt="Find Pair Image">
-            <a href="{% url 'find_pair_task_creation' %}" class="create-task-btn">Create</a>
+            <a href="{% url 'create_find_pair_task' %}" class="create-task-btn">Создать</a>
         </div>
 
-        <!-- Карточка для типа задания "Заполни пропуски" -->
+        <!-- Карточка для типа задания "Заполни пропуски" -->  
         <div class="task-type-card">
             <h4>Заполнить пропуски</h4>
             <img src="{% static 'fill_blanks_image.jpg' %}" alt="Fill Blanks Image">
-            <a href="{% url 'fill_blanks_task_creation' %}" class="create-task-btn">Create</a>
+            <!-- Ссылку добавить потом -->
         </div>
     </div>
-    <a href="{% url 'profile' %}" class="return-profile-btn">Back to Profile</a>
+    <a href="{% url 'profile' %}" class="return-profile-btn">Назад в профиль</a>
 </body>
 </html>
