@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ task.title }}</title>
+    <link rel="stylesheet" href="{% static 'task_styles.css' %}">
+</head>
+<body>
+    <h1>{{ task.title }}</h1>
+    <p>{{ task.description }}</p>
+
+    <div id="pairs">
+        {% for pair in pairs %}
+            <div class="pair">
+                <div class="element" data-id="{{ pair.id }}">
+                    {% if pair.first_element_image %}
+                        <img src="{{ pair.first_element_image.url }}" alt="First Image">
+                    {% else %}
+                        {{ pair.first_element_text }}
+                    {% endif %}
+                </div>
+                <div class="element" data-id="{{ pair.id }}">
+                    {% if pair.second_element_image %}
+                        <img src="{{ pair.second_element_image.url }}" alt="Second Image">
+                    {% else %}
+                        {{ pair.second_element_text }}
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    
+
+    <div id="results">Правильно: 0, Неправильно: 0</div>
+
+    <script src="{% static 'js/task.js' %}"></script>
+</body>
+</html>

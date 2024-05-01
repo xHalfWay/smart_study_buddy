@@ -10,3 +10,4 @@ class Pair(models.Model):
     first_element_image = models.ImageField(upload_to='', blank=True, null=True)
     second_element_text = models.CharField(max_length=100, blank=True, null=True)
     second_element_image = models.ImageField(upload_to='', blank=True, null=True)
+

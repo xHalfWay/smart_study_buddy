@@ -16,7 +16,8 @@ function addPair() {
             <input type="text" id="pair_${pairCounter}_first_text" name="pair_${pairCounter}_first_text" placeholder="Введите текст">
         </div>
         <div id="pair_${pairCounter}_first_image_input" style="display:none;">
-            <input type="file" id="pair_${pairCounter}_first_image" name="pair_${pairCounter}_first_image">
+            <input type="file" id="pair_${pairCounter}_first_image" name="pair_${pairCounter}_first_image" onchange="loadImage(event, ${pairCounter}, 'first')">
+            <img id="pair_${pairCounter}_first_image_preview" style="display:none;">
         </div>
         <br>
 
@@ -30,12 +31,27 @@ function addPair() {
             <input type="text" id="pair_${pairCounter}_second_text" name="pair_${pairCounter}_second_text" placeholder="Введите текст">
         </div>
         <div id="pair_${pairCounter}_second_image_input" style="display:none;">
-            <input type="file" id="pair_${pairCounter}_second_image" name="pair_${pairCounter}_second_image">
+            <input type="file" id="pair_${pairCounter}_second_image" name="pair_${pairCounter}_second_image" onchange="loadImage(event, ${pairCounter}, 'second')">
+            <img id="pair_${pairCounter}_second_image_preview" style="display:none;">
         </div>
         <button type="button" class="remove-pair-btn" onclick="removePair(${pairCounter})">Удалить пару</button>
         <hr>
     `;
     document.getElementById('pairs_container').appendChild(pairDiv);
+}
+
+function loadImage(event, pairIndex, element) {
+    var imageInput = event.target;
+    var imagePreview = document.getElementById(`pair_${pairIndex}_${element}_image_preview`);
+    var imageFile = imageInput.files[0];
+    var reader = new FileReader();
+
+    reader.onload = function() {
+        imagePreview.src = reader.result;
+        imagePreview.style.display = 'block';
+    }
+
+    reader.readAsDataURL(imageFile);
 }
 
 function toggleInput(pairIndex, element) {

@@ -1,14 +1,14 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm, PasswordChangeForm
-from django.contrib.auth import login, logout, update_session_auth_hash
+from django.contrib.auth import login, logout, update_session_auth_hash, authenticate
 from .forms import RegistrationForm, UserProfileForm, ChangePasswordForm
 from django.contrib.auth.models import User, Group
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render
-from django.contrib.auth import authenticate, login
 from django.urls import reverse_lazy
 from study_buddy.models import Task, Pair
 from django.contrib import messages
+from django.http import JsonResponse
+
 
 def register_view(request):
     if request.method == 'POST':
@@ -94,7 +94,6 @@ def change_password(request):
         password_form = ChangePasswordForm()
     return render(request, 'change_password.html', {'form': password_form})  
 
-
 def change_password_view(request):
     if request.method == 'POST':
         form = ChangePasswordForm(request.POST)
@@ -110,7 +109,6 @@ def change_password_view(request):
     else:
         form = ChangePasswordForm()
     return render(request, 'change_password.html', {'form': form})
-
 
 def task_creation(request):
     return render(request, 'task_creation.html')
@@ -145,3 +143,7 @@ def create_find_pair_task(request):
 
     return render(request, 'create_find_pair_task.html')
 
+def task_view(request, task_id):
+    task = get_object_or_404(Task, pk=task_id)
+    pairs = task.pair_set.all()  
+    return render(request, 'task.html', {'task': task, 'pairs': pairs})

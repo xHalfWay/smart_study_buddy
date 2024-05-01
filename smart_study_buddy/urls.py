@@ -31,5 +31,7 @@ urlpatterns = [
     path('logout/', views.logout_view, name='logout'),
     path('task_creation/', views.task_creation, name='task_creation'),
     path('create_find_pair_task/', views.create_find_pair_task, name='create_find_pair_task'),
+    path('task/<int:task_id>/', views.task_view, name='task_view'),
+
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
