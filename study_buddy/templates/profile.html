@@ -16,6 +16,9 @@
             {% if user.groups.all.0.name == 'Учитель' %}
             <a href="{% url 'task_creation' %}" class="task-creation-btn">Создание заданий</a>
             {% endif %}
+            {% if user.groups.all.0.name == 'Ученик' %}
+            <a href="{% url 'task_list' %}" class="task-list-btn">Список заданий</a>
+            {% endif %}
             <a href="{% url 'change_password' %}" class="change-password-btn">Изменить пароль</a>
             <a href="{% url 'logout' %}" class="logout-btn">Выйти</a>
         {% else %}

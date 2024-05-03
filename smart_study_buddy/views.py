@@ -147,3 +147,7 @@ def task_view(request, task_id):
     task = get_object_or_404(Task, pk=task_id)
     pairs = task.pair_set.all()  
     return render(request, 'task.html', {'task': task, 'pairs': pairs})
+
+def task_list(request):
+    tasks = Task.objects.all()
+    return render(request, 'task_list.html', {'tasks': tasks})
