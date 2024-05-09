@@ -4,10 +4,12 @@ from django.contrib.auth import login, logout, update_session_auth_hash, authent
 from .forms import RegistrationForm, UserProfileForm, ChangePasswordForm
 from django.contrib.auth.models import User, Group
 from django.contrib.auth.decorators import login_required
-from django.urls import reverse_lazy
-from study_buddy.models import Task, Pair
+from django.urls import reverse_lazy, reverse
+from study_buddy.models import Task, Pair, CompletedTask
 from django.contrib import messages
-from django.http import JsonResponse
+from django.utils import timezone
+from django.http import HttpResponseRedirect, HttpResponseBadRequest
+
 
 
 def register_view(request):
@@ -143,11 +145,49 @@ def create_find_pair_task(request):
 
     return render(request, 'create_find_pair_task.html')
 
+@login_required
 def task_view(request, task_id):
     task = get_object_or_404(Task, pk=task_id)
-    pairs = task.pair_set.all()  
+    pairs = task.pair_set.all()
+    if request.method == 'POST':
+        # score = calculate_score(correct_pairs, total_pairs) 
+        completed_task = CompletedTask.objects.create(
+            student=request.user,
+            task=task,
+            completed_date=timezone.now(),
+            score=0 # реализовать баллы
+        )
+        completed_task.save()
+        return redirect('task_list')
     return render(request, 'task.html', {'task': task, 'pairs': pairs})
 
+
+@login_required
 def task_list(request):
-    tasks = Task.objects.all()
+    completed_tasks = CompletedTask.objects.filter(student=request.user).values_list('task_id', flat=True)
+    tasks = Task.objects.exclude(id__in=completed_tasks)
     return render(request, 'task_list.html', {'tasks': tasks})
+
+def complete_task(request, task_id):
+    if request.method == 'POST':
+        task = get_object_or_404(Task, pk=task_id)
+        CompletedTask.objects.create(student=request.user, task=task)
+        return HttpResponseRedirect(reverse('task_list'))
+    else:
+        return HttpResponseBadRequest("Метод запроса не поддерживается")
+
+# def calculate_score(correct_pairs, total_pairs):
+#     if total_pairs == 0:
+#         return 0 
+#     else:
+#         percentage_correct = (correct_pairs / total_pairs) * 100
+#         if percentage_correct >= 90:
+#             return 5
+#         elif percentage_correct >= 80:
+#             return 4
+#         elif percentage_correct >= 70:
+#             return 3
+#         elif percentage_correct >= 60:
+#             return 2
+#         else:
+#             return 1    

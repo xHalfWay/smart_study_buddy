@@ -34,6 +34,13 @@
     
 
     <div id="results">Правильно: 0, Неправильно: 0</div>
+
+    <form id="complete-task-form" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+        <button id="complete-task-btn" type="submit" class="complete-task-btn">Завершить задание</button>
+    </form>
+
     <a href="{% url 'profile' %}" class="return-btn">Вернуться в профиль</a>
     <a href="{% url 'task_list' %}" class="return-btn">Вернуться к списку доступных заданий</a>
 

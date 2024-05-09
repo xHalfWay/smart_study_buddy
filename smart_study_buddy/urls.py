@@ -33,6 +33,8 @@ urlpatterns = [
     path('create_find_pair_task/', views.create_find_pair_task, name='create_find_pair_task'),
     path('task/<int:task_id>/', views.task_view, name='task_view'),
     path('tasks/', views.task_list, name='task_list'),
+    path('task/<int:task_id>/complete/', views.complete_task, name='complete_task'),
+
 
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

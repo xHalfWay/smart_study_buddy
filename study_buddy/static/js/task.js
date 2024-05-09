@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let totalPairs = 0;
 
     elements.forEach(element => {
-        element.addEventListener('click', () => {
+        element.onclick = function() {
             if (!selectedElement) {
                 selectedElement = element;
                 element.classList.add('selected');
@@ -42,6 +42,36 @@ document.addEventListener('DOMContentLoaded', function() {
                     correctPairs++;
                     totalPairs++;
                     updateResults();
+
+                    const taskId = selectedElement.dataset.taskId;
+                    const csrfToken = document.querySelector('input[name="csrfmiddlewaretoken"]').value;
+                    const url = '/save_completed_task/';
+                    const data = {
+                        taskId: taskId,
+                        csrfmiddlewaretoken: csrfToken,
+                        correctPairs: correctPairs,
+                        totalPairs: totalPairs
+                    };
+                    fetch(url, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRFToken': csrfToken
+                        },
+                        body: JSON.stringify(data)
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log(data.message);
+                    })
+                    .catch(error => {
+                        console.error('There was a problem with your fetch operation:', error);
+                    });
                 } else {
                     selectedElement.classList.remove('selected');
                     totalPairs++;
@@ -49,9 +79,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 selectedElement = null;
             }
-        });
+        };
     });
-
+    
     function updateResults() {
         const resultElement = document.getElementById('results');
         resultElement.textContent = `Правильно: ${correctPairs}, Неправильно: ${totalPairs - correctPairs}`;
