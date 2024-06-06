@@ -1,101 +1,262 @@
-Watching for file changes with StatReloader
-Watching for file changes with StatReloader
-"GET /chat/ HTTP/1.1" 200 674
-"GET /static/chat_styles.css HTTP/1.1" 304 0
-"GET /static/js/chat.js HTTP/1.1" 304 0
-Internal Server Error: /get_gigachat_token/
-"POST /get_gigachat_token/ HTTP/1.1" 500 142
-D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
-Watching for file changes with StatReloader
-Internal Server Error: /get_gigachat_token/
-"POST /get_gigachat_token/ HTTP/1.1" 500 142
-Watching for file changes with StatReloader
-Watching for file changes with StatReloader
-"GET / HTTP/1.1" 200 6646
-"GET /chat/ HTTP/1.1" 200 674
-"GET /static/chat_styles.css HTTP/1.1" 304 0
-"GET /static/js/chat.js HTTP/1.1" 200 2389
-"GET /chat/ HTTP/1.1" 200 674
-"GET /static/chat_styles.css HTTP/1.1" 304 0
-"GET /static/js/chat.js HTTP/1.1" 304 0
-"GET /chat/ HTTP/1.1" 200 674
-"GET /chat/ HTTP/1.1" 200 674
-D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
-Watching for file changes with StatReloader
-"GET /chat/ HTTP/1.1" 200 674
-"GET /static/js/chat.js HTTP/1.1" 304 0
-Watching for file changes with StatReloader
-"GET /chat/ HTTP/1.1" 200 801
-"GET /static/chat_styles.css HTTP/1.1" 304 0
-"GET /static/js/chat.js HTTP/1.1" 200 2521
-"GET /chat/ HTTP/1.1" 200 892
-"GET /static/js/chat.js HTTP/1.1" 304 0
-D:\smart_study_buddy\smart_study_buddy\settings.py changed, reloading.
-Watching for file changes with StatReloader
 D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
 Watching for file changes with StatReloader
 D:\smart_study_buddy\smart_study_buddy\urls.py changed, reloading.
 Watching for file changes with StatReloader
 D:\smart_study_buddy\smart_study_buddy\urls.py changed, reloading.
 Watching for file changes with StatReloader
-"GET /chat/ HTTP/1.1" 200 892
-"GET /static/chat_styles.css HTTP/1.1" 200 1263
+Method Not Allowed: /chat/
+"GET /chat/ HTTP/1.1" 405 24
+Method Not Allowed: /chat/
+"GET /chat/ HTTP/1.1" 405 24
+Method Not Allowed: /chat/
+"GET /chat/ HTTP/1.1" 405 24
+"GET /temp HTTP/1.1" 301 0
+"GET /temp/ HTTP/1.1" 200 26
+"GET /temp/ HTTP/1.1" 200 26
+"GET /temp/ HTTP/1.1" 200 26
+"GET /temp/ HTTP/1.1" 200 26
+Method Not Allowed: /chat/
+"GET /chat/ HTTP/1.1" 405 24
+Method Not Allowed: /chat/
+"GET /chat/ HTTP/1.1" 405 24
+Method Not Allowed: /chat/
+"GET /chat/ HTTP/1.1" 405 24
+Method Not Allowed: /chat/
+"GET /chat/ HTTP/1.1" 405 24
+Method Not Allowed: /chat/
+"GET /chat/ HTTP/1.1" 405 24
+Method Not Allowed: /chat/
+"GET /chat/ HTTP/1.1" 405 24
+Method Not Allowed: /chat/
+"GET /chat/ HTTP/1.1" 405 24
+Method Not Allowed: /chat/
+"GET /chat/ HTTP/1.1" 405 24
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\smart_study_buddy\smart_study_buddy\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 1283
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
 "GET /static/js/chat.js HTTP/1.1" 200 2358
-"GET /chat/ HTTP/1.1" 200 892
-"GET /static/js/chat.js HTTP/1.1" 304 0
-"GET /static/chat_styles.css HTTP/1.1" 200 1238
-"GET /chat/ HTTP/1.1" 200 892
-"GET /static/js/chat.js HTTP/1.1" 304 0
-"GET /static/chat_styles.css HTTP/1.1" 200 1127
-"GET /chat/ HTTP/1.1" 200 892
-"GET /static/chat_styles.css HTTP/1.1" 200 1238
-"GET /chat/ HTTP/1.1" 200 892
-"GET /static/chat_styles.css HTTP/1.1" 200 1263
-"GET /chat/ HTTP/1.1" 200 892
-"GET /static/chat_styles.css HTTP/1.1" 200 1034
-"GET /chat/ HTTP/1.1" 200 892
-"GET /static/js/chat.js HTTP/1.1" 304 0
-"GET /static/chat_styles.css HTTP/1.1" 200 1032
-"GET /static/chat_styles.css HTTP/1.1" 304 0
-"GET /chat/ HTTP/1.1" 200 892
-"GET /static/js/chat.js HTTP/1.1" 304 0
-"GET /static/chat_styles.css HTTP/1.1" 200 1033
-"GET /chat/ HTTP/1.1" 200 892
-"GET /static/chat_styles.css HTTP/1.1" 304 0
-"GET /chat/ HTTP/1.1" 200 892
-"GET /static/js/chat.js HTTP/1.1" 304 0
-"GET /static/chat_styles.css HTTP/1.1" 200 1196
-"GET /chat/ HTTP/1.1" 200 892
-"GET /static/chat_styles.css HTTP/1.1" 200 1197
-"GET /chat/ HTTP/1.1" 200 892
-"GET /static/chat_styles.css HTTP/1.1" 200 1197
-"GET /chat/ HTTP/1.1" 200 892
-"GET /static/js/chat.js HTTP/1.1" 304 0
-"GET /static/chat_styles.css HTTP/1.1" 200 1363
-"GET /chat/ HTTP/1.1" 200 892
-"GET /static/chat_styles.css HTTP/1.1" 200 1364
-"GET /chat/ HTTP/1.1" 200 892
-"GET /static/chat_styles.css HTTP/1.1" 200 1364
-"GET /chat/ HTTP/1.1" 200 972
-"GET /static/chat_styles.css HTTP/1.1" 304 0
-"GET /static/js/chat.js HTTP/1.1" 304 0
-"GET /chat/ HTTP/1.1" 200 972
-"GET /static/js/chat.js HTTP/1.1" 304 0
-"GET /static/chat_styles.css HTTP/1.1" 200 1875
-"GET /profile/ HTTP/1.1" 200 925
-"GET /profile/ HTTP/1.1" 200 925
-"GET /chat/ HTTP/1.1" 200 1069
-"GET /static/chat_styles.css HTTP/1.1" 304 0
-"GET /static/js/chat.js HTTP/1.1" 304 0
-"GET /profile/ HTTP/1.1" 200 925
-"GET /chat/ HTTP/1.1" 200 1033
-"GET /static/chat_styles.css HTTP/1.1" 304 0
-"GET /chat/ HTTP/1.1" 200 1033
-"GET /static/js/chat.js HTTP/1.1" 304 0
-"GET /static/chat_styles.css HTTP/1.1" 200 1956
-"GET /chat/ HTTP/1.1" 200 1033
-"GET /static/chat_styles.css HTTP/1.1" 200 2018
-"GET /profile/ HTTP/1.1" 200 925
+"GET /profile/ HTTP/1.1" 200 610
+"GET /static/profile.css HTTP/1.1" 200 1302
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 6719
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 1569
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Not Found: /path/to/your/chat/view/
+"POST /path/to/your/chat/view/ HTTP/1.1" 404 4149
+Not Found: /path/to/your/chat/view/
+"POST /path/to/your/chat/view/ HTTP/1.1" 404 4149
+Not Found: /path/to/your/chat/view/
+"POST /path/to/your/chat/view/ HTTP/1.1" 404 4149
+Not Found: /path/to/your/chat/view/
+"POST /path/to/your/chat/view/ HTTP/1.1" 404 4149
+"GET /chat/ HTTP/1.1" 200 1551
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Forbidden (CSRF token missing.): /chat/
+"POST /chat/ HTTP/1.1" 403 2548
+Forbidden (CSRF token missing.): /chat/
+"POST /chat/ HTTP/1.1" 403 2548
+"GET /chat/ HTTP/1.1" 200 1551
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Forbidden (CSRF token missing.): /chat/
+"POST /chat/ HTTP/1.1" 403 2548
+Forbidden (CSRF token missing.): /chat/
+"POST /chat/ HTTP/1.1" 403 2548
+"GET /chat/ HTTP/1.1" 200 1854
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Forbidden (CSRF token missing.): /chat/
+"POST /chat/ HTTP/1.1" 403 2548
+"GET / HTTP/1.1" 200 6719
+"GET /static/styles.css HTTP/1.1" 200 6399
+"GET /static/internet.jpg HTTP/1.1" 200 77417
+"GET /static/questions.jpg HTTP/1.1" 200 79781
+"GET /static/background.jpg HTTP/1.1" 200 1328775
+"GET /static/owl.jpg HTTP/1.1" 200 1711166
+"GET /login/ HTTP/1.1" 200 1168
+"GET /static/auth_styles.css HTTP/1.1" 200 3337
+"GET /static/reg_background.jpg HTTP/1.1" 200 2124926
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 6646
+"GET /profile/ HTTP/1.1" 200 1000
+"GET /static/profile.css HTTP/1.1" 304 0
+"GET /chat/ HTTP/1.1" 200 1854
+Forbidden (CSRF token missing.): /chat/
+"POST /chat/ HTTP/1.1" 403 2548
+Forbidden (CSRF token missing.): /chat/
+"POST /chat/ HTTP/1.1" 403 2548
+"GET /chat/ HTTP/1.1" 200 1893
+"GET /chat/ HTTP/1.1" 200 1893
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+"GET /chat/ HTTP/1.1" 200 1881
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+"GET /profile/ HTTP/1.1" 200 1000
+"GET /chat/ HTTP/1.1" 200 1881
+Forbidden (CSRF token missing.): /chat/
+"POST /chat/ HTTP/1.1" 403 2548
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 1881
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Forbidden (CSRF token missing.): /chat/
+"POST /chat/ HTTP/1.1" 403 2548
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 1881
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Forbidden (CSRF token missing.): /chat/
+"POST /chat/ HTTP/1.1" 403 2548
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 1881
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Internal Server Error: /chat/
+Traceback (most recent call last):
+  File "C:\Users\пїЅпїЅпїЅпїЅпїЅпїЅпїЅ\AppData\Roaming\Python\Python39\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\пїЅпїЅпїЅпїЅпїЅпїЅпїЅ\AppData\Roaming\Python\Python39\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\пїЅпїЅпїЅпїЅпїЅпїЅпїЅ\AppData\Roaming\Python\Python39\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\пїЅпїЅпїЅпїЅпїЅпїЅпїЅ\AppData\Roaming\Python\Python39\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\smart_study_buddy\smart_study_buddy\views.py", line 209, in chat_view
+    messages = [HumanMessage(content=user_input)]
+  File "C:\Users\пїЅпїЅпїЅпїЅпїЅпїЅпїЅ\AppData\Roaming\Python\Python39\site-packages\langchain_core\messages\base.py", line 47, in __init__
+    return super().__init__(content=content, **kwargs)
+  File "C:\Users\пїЅпїЅпїЅпїЅпїЅпїЅпїЅ\AppData\Roaming\Python\Python39\site-packages\pydantic\v1\main.py", line 341, in __init__
+    raise validation_error
+pydantic.v1.error_wrappers.ValidationError: 1 validation error for HumanMessage
+content
+  none is not an allowed value (type=type_error.none.not_allowed)
+"POST /chat/ HTTP/1.1" 500 84161
+//"GET /chat/ HTTP/1.1" 200 1881
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Internal Server Error: /chat/
+Traceback (most recent call last):
+  File "C:\Users\Дмитрий\AppData\Roaming\Python\Python39\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Дмитрий\AppData\Roaming\Python\Python39\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Дмитрий\AppData\Roaming\Python\Python39\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Дмитрий\AppData\Roaming\Python\Python39\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\smart_study_buddy\smart_study_buddy\views.py", line 209, in chat_view
+    messages = [HumanMessage(content=user_input)]
+  File "C:\Users\Дмитрий\AppData\Roaming\Python\Python39\site-packages\langchain_core\messages\base.py", line 47, in __init__
+    return super().__init__(content=content, **kwargs)
+  File "C:\Users\Дмитрий\AppData\Roaming\Python\Python39\site-packages\pydantic\v1\main.py", line 341, in __init__
+    raise validation_error
+pydantic.v1.error_wrappers.ValidationError: 1 validation error for HumanMessage
+content
+  none is not an allowed value (type=type_error.none.not_allowed)
+"POST /chat/ HTTP/1.1" 500 84181
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /chat/
+"GET /chat/ HTTP/1.1" 405 184
+Method Not Allowed: /chat/
+"GET /chat/ HTTP/1.1" 405 184
+Method Not Allowed: /chat/
+"GET /chat/ HTTP/1.1" 405 184
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 2282
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Bad Request: /chat/
+"POST /chat/ HTTP/1.1" 400 104
+"GET /chat/ HTTP/1.1" 200 2282
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+"GET /chat/ HTTP/1.1" 200 2240
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Bad Request: /chat/
+"POST /chat/ HTTP/1.1" 400 104
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 2240
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Bad Request: /chat/
+"POST /chat/ HTTP/1.1" 400 104
+"GET /chat/ HTTP/1.1" 200 2237
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Bad Request: /chat/
+"POST /chat/ HTTP/1.1" 400 104
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 2237
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Bad Request: /chat/
+"POST /chat/ HTTP/1.1" 400 104
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 2237
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Forbidden (CSRF token missing.): /chat/
+"POST /chat/ HTTP/1.1" 403 2548
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /chat/
+"POST /chat/ HTTP/1.1" 400 104
+"GET /chat/ HTTP/1.1" 200 3276
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Bad Request: /chat/
+"POST /chat/ HTTP/1.1" 400 104
+"GET /chat/ HTTP/1.1" 200 3276
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /chat/ HTTP/1.1" 200 3276
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+Bad Request: /chat/
+"POST /chat/ HTTP/1.1" 400 104
+Bad Request: /chat/
+"POST /chat/ HTTP/1.1" 400 104
+Bad Request: /chat/
+"POST /chat/ HTTP/1.1" 400 104
+"GET /chat/ HTTP/1.1" 200 3363
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+Bad Request: /chat/
+"POST /chat/ HTTP/1.1" 400 104
+"GET /chat/ HTTP/1.1" 200 3363
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+Bad Request: /chat/
+"POST /chat/ HTTP/1.1" 400 104
 Internal Server Error: /chat/
 Traceback (most recent call last):
   File "C:\Users\Дмитрий\AppData\Roaming\Python\Python39\site-packages\django\template\base.py", line 505, in parse
@@ -109,7 +270,11 @@ Traceback (most recent call last):
     response = get_response(request)
   File "C:\Users\Дмитрий\AppData\Roaming\Python\Python39\site-packages\django\core\handlers\base.py", line 197, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "D:\smart_study_buddy\smart_study_buddy\views.py", line 192, in chat_view
+  File "C:\Users\Дмитрий\AppData\Roaming\Python\Python39\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Дмитрий\AppData\Roaming\Python\Python39\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\smart_study_buddy\smart_study_buddy\views.py", line 218, in chat_view
     return render(request, 'chat.html')
   File "C:\Users\Дмитрий\AppData\Roaming\Python\Python39\site-packages\django\shortcuts.py", line 24, in render
     content = loader.render_to_string(template_name, context, request, using=using)
@@ -136,530 +301,233 @@ Traceback (most recent call last):
   File "C:\Users\Дмитрий\AppData\Roaming\Python\Python39\site-packages\django\template\base.py", line 568, in invalid_block_tag
     raise self.error(
 django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
-"GET /chat/ HTTP/1.1" 500 136645
-"GET /chat/ HTTP/1.1" 200 1204
-"GET /static/chat_styles.css HTTP/1.1" 304 0
-"GET /static/js/chat.js HTTP/1.1" 304 0
-"GET /chat/ HTTP/1.1" 200 1204
-"GET /static/chat_styles.css HTTP/1.1" 200 2352
-"GET /chat/ HTTP/1.1" 200 1164
-"GET /static/js/chat.js HTTP/1.1" 304 0
-"GET /static/chat_styles.css HTTP/1.1" 200 1978
-"GET /chat/ HTTP/1.1" 200 1164
-"GET /static/chat_styles.css HTTP/1.1" 200 2138
-"GET /chat/ HTTP/1.1" 200 1283
-"GET /static/js/chat.js HTTP/1.1" 304 0
-"GET /static/chat_styles.css HTTP/1.1" 200 2240
-"GET /profile/ HTTP/1.1" 200 925
-"GET /gigachat_interaction HTTP/1.1" 301 0
-Method Not Allowed (GET): /gigachat_interaction/
-"GET /gigachat_interaction/ HTTP/1.1" 405 0
-Method Not Allowed (GET): /gigachat_interaction/
-"GET /gigachat_interaction/ HTTP/1.1" 405 0
-Method Not Allowed (GET): /gigachat_interaction/
-"GET /gigachat_interaction/ HTTP/1.1" 405 0
-"GET /chat/ HTTP/1.1" 200 1283
-"GET /static/chat_styles.css HTTP/1.1" 304 0
-"GET /static/js/chat.js HTTP/1.1" 304 0
-"GET /profile/ HTTP/1.1" 200 925
-"GET /profile/ HTTP/1.1" 200 1000
-"GET /chat/ HTTP/1.1" 200 1283
-"GET /static/chat_styles.css HTTP/1.1" 304 0
-"GET /profile/ HTTP/1.1" 200 1000
-"GET /tasks/ HTTP/1.1" 200 722
-"GET /static/task_list_styles.css HTTP/1.1" 200 323
-"GET /task/162/ HTTP/1.1" 200 2117
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 1802
-"GET /profile/ HTTP/1.1" 200 1000
-"GET /tasks/ HTTP/1.1" 200 722
-"GET /task/162/ HTTP/1.1" 200 2117
-"GET /tasks/ HTTP/1.1" 200 722
-"GET /tasks/ HTTP/1.1" 200 722
-"GET /tasks/ HTTP/1.1" 200 722
-"GET /tasks/ HTTP/1.1" 200 722
-"GET /tasks/ HTTP/1.1" 200 722
-"GET /chat/ HTTP/1.1" 200 1283
-"GET /static/js/chat.js HTTP/1.1" 200 2358
+"GET /chat/ HTTP/1.1" 500 147790
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"GET /chat/ HTTP/1.1" 200 2223
 "GET /static/chat_styles.css HTTP/1.1" 200 1631
 "GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /profile/ HTTP/1.1" 200 610
-"GET /static/profile.css HTTP/1.1" 200 1302
-"GET /tasks HTTP/1.1" 301 0
-"GET /tasks/ HTTP/1.1" 302 0
-Not Found: /accounts/login/
-"GET /accounts/login/?next=/tasks/ HTTP/1.1" 404 4287
-"GET /login/ HTTP/1.1" 200 1168
-"GET /static/auth_styles.css HTTP/1.1" 200 3337
-"GET /static/reg_background.jpg HTTP/1.1" 200 2124926
-"POST /login/ HTTP/1.1" 302 0
-"GET / HTTP/1.1" 200 6646
-"GET /static/styles.css HTTP/1.1" 200 6399
-"GET /static/internet.jpg HTTP/1.1" 200 77417
-"GET /static/questions.jpg HTTP/1.1" 200 79781
-"GET /static/background.jpg HTTP/1.1" 200 1328775
-"GET /static/owl.jpg HTTP/1.1" 200 1711166
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 89
+"POST /chat/ HTTP/1.1" 200 89
+"POST /chat/ HTTP/1.1" 200 331
+"POST /chat/ HTTP/1.1" 200 331
+"GET /chat/ HTTP/1.1" 200 2223
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 209
+"GET /chat/ HTTP/1.1" 200 2262
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 1411
+"POST /chat/ HTTP/1.1" 200 802
+"GET /chat/ HTTP/1.1" 200 2262
+"GET /static/chat_styles.css HTTP/1.1" 200 1631
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 3882
+"POST /chat/ HTTP/1.1" 200 6830
+"GET /chat/ HTTP/1.1" 200 2442
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 209
+"POST /chat/ HTTP/1.1" 200 3482
+"GET /chat/ HTTP/1.1" 200 2442
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"GET /chat/ HTTP/1.1" 200 2442
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
 "GET /profile/ HTTP/1.1" 200 1000
-"GET /tasks/ HTTP/1.1" 200 722
-"GET /static/task_list_styles.css HTTP/1.1" 200 1746
-"GET /tasks/ HTTP/1.1" 200 722
-"GET /tasks/ HTTP/1.1" 200 1955
-"GET /static/task_list_styles.css HTTP/1.1" 304 0
-"GET /tasks/ HTTP/1.1" 200 2178
-"GET /static/task_list_styles.css HTTP/1.1" 200 2315
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /static/task_styles.css HTTP/1.1" 200 1802
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /tasks/ HTTP/1.1" 200 2178
-"GET /static/task_list_styles.css HTTP/1.1" 200 2617
-"GET /tasks/ HTTP/1.1" 200 2178
-"GET /static/task_list_styles.css HTTP/1.1" 304 0
-"GET /tasks/ HTTP/1.1" 200 2178
-"GET /static/task_list_styles.css HTTP/1.1" 200 2644
-"GET /tasks/ HTTP/1.1" 200 2178
-"GET /static/task_list_styles.css HTTP/1.1" 200 2667
-"GET /tasks/ HTTP/1.1" 200 2178
-"GET /static/task_list_styles.css HTTP/1.1" 304 0
-"GET /tasks/ HTTP/1.1" 200 2178
-"GET /static/task_list_styles.css HTTP/1.1" 304 0
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /static/task_list_styles.css HTTP/1.1" 200 2019
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /static/task_list_styles.css HTTP/1.1" 200 1998
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /static/task_list_styles.css HTTP/1.1" 200 2019
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /static/task_list_styles.css HTTP/1.1" 304 0
-"GET /task/153/ HTTP/1.1" 200 1827
-"GET /task/153/ HTTP/1.1" 200 1827
-"GET /task/153/ HTTP/1.1" 200 1827
-"GET /task/153/ HTTP/1.1" 200 1827
-"GET /task/153/ HTTP/1.1" 200 1827
-"GET /task/153/ HTTP/1.1" 200 1827
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /static/task_list_styles.css HTTP/1.1" 304 0
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /task/152/ HTTP/1.1" 200 1828
-"POST /save_completed_task/ HTTP/1.1" 200 222
-"GET /profile/ HTTP/1.1" 200 1000
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /static/task_list_styles.css HTTP/1.1" 304 0
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /static/task_list_styles.css HTTP/1.1" 304 0
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /task/152/ HTTP/1.1" 200 1828
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /task/153/ HTTP/1.1" 200 1827
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /task/160/ HTTP/1.1" 200 2997
-"GET /media/sixteen-miles-out-Uc6kiKdW2_g-unsplash_hSlVD4q.jpg HTTP/1.1" 200 2422260
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /task/161/ HTTP/1.1" 200 1481
-"GET /media/martin-adams-_OZCl4XcpRw-unsplash_Sng3lTw.jpg HTTP/1.1" 200 1711166
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /task/162/ HTTP/1.1" 200 2117
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /task/163/ HTTP/1.1" 200 1356
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /task/153/ HTTP/1.1" 200 1827
-"GET /task/153/ HTTP/1.1" 200 1886
-"GET /task/153/ HTTP/1.1" 200 1886
-"GET /task/153/ HTTP/1.1" 200 1886
-"GET /task/153/ HTTP/1.1" 200 1886
-"GET /profile/ HTTP/1.1" 200 1000
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /static/task_list_styles.css HTTP/1.1" 304 0
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/task_styles.css HTTP/1.1" 200 0
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/task_styles.css HTTP/1.1" 200 0
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2618
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 1548
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2079
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"POST /save_completed_task/ HTTP/1.1" 200 222
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/task_styles.css HTTP/1.1" 304 0
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2423
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/task_styles.css HTTP/1.1" 200 2423
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/task_styles.css HTTP/1.1" 200 2423
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 1985
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2320
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/task_styles.css HTTP/1.1" 304 0
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 1802
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 1257
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/task_styles.css HTTP/1.1" 200 1802
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 1802
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 1802
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/task_styles.css HTTP/1.1" 200 1802
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /profile HTTP/1.1" 301 0
-"GET /profile/ HTTP/1.1" 200 1000
-"GET /profile/ HTTP/1.1" 200 1000
-"GET /static/profile.css HTTP/1.1" 200 1302
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /profile/ HTTP/1.1" 200 1000
-"GET /static/profile.css HTTP/1.1" 200 1302
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 1680
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"POST /save_completed_task/ HTTP/1.1" 200 222
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/task_styles.css HTTP/1.1" 304 0
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 1953
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2102
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"POST /save_completed_task/ HTTP/1.1" 200 222
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/task_styles.css HTTP/1.1" 304 0
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/task_styles.css HTTP/1.1" 200 2085
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2085
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2085
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"POST /save_completed_task/ HTTP/1.1" 200 222
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/task_styles.css HTTP/1.1" 304 0
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2068
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/task_styles.css HTTP/1.1" 304 0
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 1680
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 1802
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 1915
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/task_styles.css HTTP/1.1" 200 1915
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 1915
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2068
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2124
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/task_styles.css HTTP/1.1" 200 2124
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2011
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2011
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2018
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/task_styles.css HTTP/1.1" 200 2019
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /static/task_styles.css HTTP/1.1" 200 2019
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"POST /save_completed_task/ HTTP/1.1" 200 222
-"GET /profile/ HTTP/1.1" 200 1000
-"GET /static/profile.css HTTP/1.1" 304 0
-"GET / HTTP/1.1" 200 6646
-"GET /profile/ HTTP/1.1" 200 1000
-"GET /chat/ HTTP/1.1" 200 1283
+"GET /chat/ HTTP/1.1" 200 2442
 "GET /static/chat_styles.css HTTP/1.1" 304 0
-"GET /static/js/chat.js HTTP/1.1" 304 0
-"GET /profile/ HTTP/1.1" 200 1000
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /static/task_list_styles.css HTTP/1.1" 304 0
-"GET /task/153/ HTTP/1.1" 200 1886
-"GET /static/task_styles.css HTTP/1.1" 304 0
-"GET /profile/ HTTP/1.1" 200 1000
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /task/160/ HTTP/1.1" 200 3056
-"GET /static/task_styles.css HTTP/1.1" 304 0
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /task/161/ HTTP/1.1" 200 1540
-"GET /static/task_styles.css HTTP/1.1" 304 0
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /task/162/ HTTP/1.1" 200 2176
-"GET /static/task_styles.css HTTP/1.1" 304 0
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /task/152/ HTTP/1.1" 200 1887
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /task/153/ HTTP/1.1" 200 1886
-"GET /static/task_styles.css HTTP/1.1" 304 0
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /task/160/ HTTP/1.1" 200 3056
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /task/163/ HTTP/1.1" 200 1415
-"GET /static/task_styles.css HTTP/1.1" 304 0
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /task/153/ HTTP/1.1" 200 1886
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2858
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /static/task_styles.css HTTP/1.1" 304 0
-"GET /tasks/ HTTP/1.1" 200 2153
-"GET /static/task_list_styles.css HTTP/1.1" 304 0
-"POST /task/153/ HTTP/1.1" 302 0
-"GET /tasks/ HTTP/1.1" 200 1851
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/task_styles.css HTTP/1.1" 200 2858
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 3577
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2870
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2870
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/task_styles.css HTTP/1.1" 200 2870
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 3441
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/task_styles.css HTTP/1.1" 200 3441
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 3441
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 3483
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 3511
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 3511
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/task_styles.css HTTP/1.1" 200 3511
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/task_styles.css HTTP/1.1" 200 3511
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/task_styles.css HTTP/1.1" 200 3511
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/task_styles.css HTTP/1.1" 304 0
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/task_styles.css HTTP/1.1" 304 0
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/task_styles.css HTTP/1.1" 304 0
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/task_styles.css HTTP/1.1" 304 0
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/task_styles.css HTTP/1.1" 304 0
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/task_styles.css HTTP/1.1" 200 3446
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 4076
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/task_styles.css HTTP/1.1" 200 4076
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 3452
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 3767
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 3621
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/task_styles.css HTTP/1.1" 200 3530
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/task_styles.css HTTP/1.1" 200 2895
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2898
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/task_styles.css HTTP/1.1" 200 2898
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2898
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2898
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2898
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2898
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /task/153/ HTTP/1.1" 200 1926
-"GET /static/js/task.js HTTP/1.1" 200 3872
-"GET /static/task_styles.css HTTP/1.1" 200 2898
-"GET /static/profile_background.jpg HTTP/1.1" 200 421593
-"GET /tasks/ HTTP/1.1" 200 1851
-"GET /static/task_list_styles.css HTTP/1.1" 304 0
-"GET /profile/ HTTP/1.1" 200 1000
-"GET /static/profile.css HTTP/1.1" 304 0
-"GET /tasks/ HTTP/1.1" 200 1851
-"GET /profile/ HTTP/1.1" 200 1000
-"GET /chat/ HTTP/1.1" 200 1283
-"GET /static/chat_styles.css HTTP/1.1" 304 0
-"GET /static/js/chat.js HTTP/1.1" 304 0
-"GET /profile/ HTTP/1.1" 200 1000
-"GET /profile/change-password/ HTTP/1.1" 200 1273
-"GET /static/change_password.css HTTP/1.1" 200 1757
-"GET /profile/ HTTP/1.1" 200 1000
-"GET / HTTP/1.1" 200 6646
-"GET /profile/ HTTP/1.1" 200 1000
-"GET /logout/ HTTP/1.1" 302 0
-"GET / HTTP/1.1" 200 6719
-"GET /login/ HTTP/1.1" 200 1168
-"POST /login/ HTTP/1.1" 302 0
-"GET / HTTP/1.1" 200 6646
-"GET /profile/ HTTP/1.1" 200 943
-"GET /task_creation/ HTTP/1.1" 200 1212
-"GET /static/custom_styles.css HTTP/1.1" 200 1397
-"GET /static/fill_blanks_image.jpg HTTP/1.1" 200 60860
-"GET /static/find_pair_image.jpg HTTP/1.1" 200 57024
-"GET /create_find_pair_task/ HTTP/1.1" 200 1101
-"GET /static/create_find_pair_task.css HTTP/1.1" 200 3344
-"GET /static/js/create_find_pair.js HTTP/1.1" 200 6110
-"GET /task_creation/ HTTP/1.1" 200 1212
-"GET /profile/ HTTP/1.1" 200 943
-"GET /profile/change-password/ HTTP/1.1" 200 1273
-"GET /profile/ HTTP/1.1" 200 943
-"GET / HTTP/1.1" 200 6646
-"GET /profile/ HTTP/1.1" 200 943
-"GET /logout/ HTTP/1.1" 302 0
-"GET / HTTP/1.1" 200 6719
+"POST /chat/ HTTP/1.1" 200 3313
+"GET /chat/ HTTP/1.1" 200 3196
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 4762
+"POST /chat/ HTTP/1.1" 200 9851
+"GET /chat/ HTTP/1.1" 200 3195
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 5645
+"POST /chat/ HTTP/1.1" 200 3435
+"GET /chat/ HTTP/1.1" 200 3196
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 678
 D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
 Watching for file changes with StatReloader
-D:\smart_study_buddy\smart_study_buddy\urls.py changed, reloading.
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
 Watching for file changes with StatReloader
-D:\smart_study_buddy\smart_study_buddy\settings.py changed, reloading.
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 3196
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 665
+"POST /chat/ HTTP/1.1" 200 487
+"POST /chat/ HTTP/1.1" 200 213
+"POST /chat/ HTTP/1.1" 200 2328
+"POST /chat/ HTTP/1.1" 200 5912
+"POST /chat/ HTTP/1.1" 200 364
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 3196
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 1739
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /chat/ HTTP/1.1" 200 465
+"POST /chat/ HTTP/1.1" 200 2041
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 3196
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 4192
+"GET /chat/ HTTP/1.1" 200 3196
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"GET /chat/ HTTP/1.1" 200 3195
+"POST /chat/ HTTP/1.1" 200 712
+"POST /chat/ HTTP/1.1" 200 535
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 3195
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 570
+"POST /chat/ HTTP/1.1" 200 3445
+"POST /chat/ HTTP/1.1" 200 333
+"POST /chat/ HTTP/1.1" 200 245
+"POST /chat/ HTTP/1.1" 200 440
+"POST /chat/ HTTP/1.1" 200 640
+"POST /chat/ HTTP/1.1" 200 302
+"POST /chat/ HTTP/1.1" 200 684
+"POST /chat/ HTTP/1.1" 200 3010
+"POST /chat/ HTTP/1.1" 200 614
+"POST /chat/ HTTP/1.1" 200 1103
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 3195
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 1256
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 3195
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 1923
+"GET /profile/ HTTP/1.1" 200 1000
+"GET /chat/ HTTP/1.1" 200 3195
+"POST /chat/ HTTP/1.1" 200 2385
+"POST /chat/ HTTP/1.1" 200 2068
+"POST /chat/ HTTP/1.1" 200 1219
+"POST /chat/ HTTP/1.1" 200 300
+"POST /chat/ HTTP/1.1" 200 2136
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 3195
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 367
+"POST /chat/ HTTP/1.1" 200 295
+"POST /chat/ HTTP/1.1" 200 1241
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 3195
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 1183
+"POST /chat/ HTTP/1.1" 200 4019
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 3195
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"GET /chat/ HTTP/1.1" 200 4248
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 3942
+"POST /chat/ HTTP/1.1" 200 2057
+"GET /chat/ HTTP/1.1" 200 4247
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 2327
+"POST /chat/ HTTP/1.1" 200 1629
+"POST /chat/ HTTP/1.1" 200 1617
+"GET /chat/ HTTP/1.1" 200 4247
+"GET /static/chat_styles.css HTTP/1.1" 200 2031
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 467
+"POST /chat/ HTTP/1.1" 200 491
+"POST /chat/ HTTP/1.1" 200 405
+"GET /chat/ HTTP/1.1" 200 4247
+"GET /static/chat_styles.css HTTP/1.1" 200 2031
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"GET /chat/ HTTP/1.1" 200 4247
+"GET /static/chat_styles.css HTTP/1.1" 200 1602
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"GET /chat/ HTTP/1.1" 200 3840
+"GET /static/chat_styles.css HTTP/1.1" 200 2146
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 447
+"POST /chat/ HTTP/1.1" 200 405
+"GET /chat/ HTTP/1.1" 200 3840
+"GET /static/chat_styles.css HTTP/1.1" 200 2276
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"GET /profile/ HTTP/1.1" 200 1000
+"GET /chat/ HTTP/1.1" 200 3840
+"GET /static/chat_styles.css HTTP/1.1" 304 0
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
 Watching for file changes with StatReloader

@@ -4,32 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GigaChat</title>
+    <title>Умный друг для учебы</title>
     <link rel="stylesheet" href="{% static 'chat_styles.css' %}">
 </head>
 <body>
     <div class="content-container">
-        <form id="chat-form">
-            {% csrf_token %}
-            <div class="chat-container">
-                <div class="chat-header">
-                    <div class="header-content">
-                        <div class="chat-title">GigaChat</div>
-                    </div>
-                </div>
-                <div class="chat-messages" id="chat-messages"></div>
-                <div class="chat-input">
-                    <input type="text" id="chat-input" placeholder="Напишите сообщение...">
-                    <button type="submit" id="chat-send">Отправить</button>
-                </div>
+        <div class="chat-container">
+            <div class="chat-header">Умный друг для учебы</div>
+            <div class="chat-messages" id="chat-messages">
+                {% for message in messages %}
+                    <p><strong>{{ message.user.username }}:</strong> {{ message.message }}</p>
+                {% endfor %}
             </div>
-        </form>
-
+            <form class="chat-input" id="message-form">
+                <input type="text" id="user-input" placeholder="Введите ваше сообщение...">
+                <button type="submit">Отправить</button>
+                <button type="button" id="stop-button" style="display: none;">Остановить</button>
+            </form>
+        </div>
         <div class="profile-btn-container">
-            <a href="{% url 'profile' %}" class="return-profile-btn">Назад в профиль</a>
+            <a href="{% url 'profile' %}" class="return-profile-btn">Вернуться в профиль</a>
         </div>
     </div>
-    
-    <script src="{% static 'js/chat.js' %}"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('message-form');
+            const userInput = document.getElementById('user-input');
+            const chatMessages = document.getElementById('chat-messages');
+            const stopButton = document.getElementById('stop-button');
+
+            let typingInterval;
+            let isTyping = false;
+
+            function typeText(element, text, delay = 8) {
+                let i = 0;
+                isTyping = true;
+                stopButton.style.display = 'inline';
+
+                return new Promise((resolve) => {
+                    function type() {
+                        if (i < text.length) {
+                            element.innerHTML += text.charAt(i);
+                            i++;
+                            typingInterval = setTimeout(type, delay);
+                        } else {
+                            isTyping = false;
+                            stopButton.style.display = 'none';
+                            resolve();
+                        }
+                    }
+                    type();
+                });
+            }
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const message = userInput.value.trim();
+                if (message === '') return;
+
+                userInput.value = '';
+
+                try {
+                    const response = await fetch('/chat/', {
+                        method: 'POST',
+                        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                        body: 'message=' + encodeURIComponent(message)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('Ошибка при отправке сообщения');
+                    }
+
+                    const data = await response.json();
+                    chatMessages.innerHTML += `<p><strong>Ученик:</strong> ${message}</p>`;
+                    const botMessageElement = document.createElement('p');
+                    botMessageElement.innerHTML = '<strong>Умный друг для учебы:</strong> ';
+                    chatMessages.appendChild(botMessageElement);
+                    await typeText(botMessageElement, data.message);
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                } catch (error) {
+                    console.error(error);
+                }
+            });
+
+            stopButton.addEventListener('click', () => {
+                if (isTyping) {
+                    clearTimeout(typingInterval);
+                    isTyping = false;
+                    stopButton.style.display = 'none';
+                }
+            });
+
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        });
+    </script>
 </body>
 </html>

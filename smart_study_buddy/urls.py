@@ -36,7 +36,6 @@ urlpatterns = [
     path('task/<int:task_id>/complete/', views.complete_task, name='complete_task'),
     path('save_completed_task/', views.save_completed_task, name='save_completed_task'),
     path('chat/', views.chat_view, name='chat'),
-    path('gigachat_interaction/', views.gigachat_interaction, name='gigachat_interaction'),
     
 
     

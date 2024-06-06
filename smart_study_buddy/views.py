@@ -8,7 +8,10 @@ from django.urls import reverse_lazy, reverse
 from study_buddy.models import Task, Pair, CompletedTask
 from django.contrib import messages
 from django.utils import timezone
-from django.http import HttpResponseRedirect, HttpResponseBadRequest
+from django.http import HttpResponseRedirect, HttpResponseBadRequest, JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+from langchain.schema import HumanMessage, SystemMessage
+from langchain_community.chat_models.gigachat import GigaChat
 
 
 
@@ -188,61 +191,20 @@ def save_completed_task(request):
 
         return JsonResponse({'error': 'Метод запроса не поддерживается'}, status=400)    
     
+
+@login_required
+@csrf_exempt
 def chat_view(request):
+    if request.method == 'POST':
+        user_input = request.POST.get('message')
+        if user_input is not None:  
+            chat = GigaChat(credentials='OGI1ZDJhNTktZmUxNi00MTI1LTg1MzgtMTU4NGI1MzI3ZDZmOjczNjkxMGVjLTdiNzItNDZkZC04Y2U4LWU5ZmI4ZjhiM2YyNw==', verify_ssl_certs=False)
+            system_message = SystemMessage(content="Вы - виртуальный учитель и наставник, который помогает детям младших классов в их учебе. Пожалуйста, отвечайте простым и понятным языком, предоставляйте простые и понятные объяснения, помогайте с решением задач и отвечайте на вопросы по различным предметам. Ваша задача — поддерживать и мотивировать учеников, давать советы по организации учебного процесса и предоставлять полезные учебные материалы. Не обсуждайте видеоигры или другие развлекательные темы, сосредоточьтесь на учебных вопросах. ")
+            messages = [system_message, HumanMessage(content=user_input)]
+            res = chat.invoke(messages)
+            response_data = {'message': res.content}
+            return JsonResponse(response_data)
+        else:
+            return JsonResponse({'error': 'Сообщение пустое'}, status=400)  
     return render(request, 'chat.html')
 
-
-# test
-from django.http import JsonResponse
-from django.views.decorators.http import require_POST
-from django.views.decorators.csrf import csrf_exempt
-from langchain.schema import HumanMessage, SystemMessage
-from langchain_community.chat_models.gigachat import GigaChat
-import os
-
-@csrf_exempt
-@require_POST
-def gigachat_interaction(request):
-    try:
-        client_id = '8b5d2a59-fe16-4125-8538-1584b5327d6f'
-        client_secret = '736910ec-7b72-46dd-8ce8-e9fb8f8b3f27'
-
-        chat = GigaChat(credentials=(client_id, client_secret), verify_ssl_certs=False)
-
-        user_input = request.POST.get('message')
-        if not user_input:
-            return JsonResponse({'error': 'No message provided'}, status=400)
-
-        messages = [
-            SystemMessage(content="Ты эмпатичный бот-психолог, который помогает пользователю решить его проблемы."),
-            HumanMessage(content=user_input)
-        ]
-
-        res = chat(messages)
-        messages.append(res)
-
-        return JsonResponse({'response': res.content})
-    except Exception as e:
-        return JsonResponse({'error': str(e)}, status=500)
-
-
-
-# def calculate_grade(task):
-
-#     correct_pairs_count = 0
-#     total_pairs_count = task.pair_set.count()
-
-#     for pair in task.pair_set.all():
-#         if pair.correct:
-#             correct_pairs_count += 1
-
-#     percentage_correct_pairs = (correct_pairs_count / total_pairs_count) * 100
-
-#     if percentage_correct_pairs >= 90:
-#         return 5  
-#     elif percentage_correct_pairs >= 70:
-#         return 4  
-#     elif percentage_correct_pairs >= 50:
-#         return 3 
-#     else:
-#         return 2 
