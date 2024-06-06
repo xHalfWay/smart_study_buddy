@@ -531,3 +531,53 @@ D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
 Watching for file changes with StatReloader
 D:\smart_study_buddy\smart_study_buddy\views.py changed, reloading.
 Watching for file changes with StatReloader
+"GET /chat/ HTTP/1.1" 200 3840
+"GET /static/chat_styles.css HTTP/1.1" 200 2174
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"GET /chat/ HTTP/1.1" 200 3898
+"GET /static/chat_styles.css HTTP/1.1" 200 2174
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"GET /chat/ HTTP/1.1" 200 3923
+"GET /static/chat_styles.css HTTP/1.1" 200 2174
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"GET /chat/ HTTP/1.1" 200 3996
+"GET /static/chat_styles.css HTTP/1.1" 200 2174
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /chat/ HTTP/1.1" 200 346
+"POST /chat/ HTTP/1.1" 200 4102
+"POST /chat/ HTTP/1.1" 200 40
+"GET /profile/ HTTP/1.1" 200 1000
+"GET /chat/ HTTP/1.1" 200 3996
+"GET /static/chat_styles.css HTTP/1.1" 304 0
+"GET /profile/ HTTP/1.1" 200 1000
+"GET /profile/ HTTP/1.1" 200 1013
+"GET /chat/ HTTP/1.1" 200 3996
+"GET /static/chat_styles.css HTTP/1.1" 304 0
+"GET /profile/ HTTP/1.1" 200 1013
+"GET /tasks/ HTTP/1.1" 200 1851
+"GET /tasks/ HTTP/1.1" 200 1851
+"GET /static/task_list_styles.css HTTP/1.1" 200 2019
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"GET /task/152/ HTTP/1.1" 200 1927
+"GET /static/js/task.js HTTP/1.1" 200 3872
+"GET /static/task_styles.css HTTP/1.1" 200 2898
+"GET /task/152/ HTTP/1.1" 200 1927
+"GET /static/task_styles.css HTTP/1.1" 200 2898
+"GET /static/js/task.js HTTP/1.1" 200 3872
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"GET /tasks/ HTTP/1.1" 200 1851
+"GET /task/160/ HTTP/1.1" 200 3096
+"GET /media/sixteen-miles-out-Uc6kiKdW2_g-unsplash_hSlVD4q.jpg HTTP/1.1" 200 2422260
+"GET /tasks/ HTTP/1.1" 200 1851
