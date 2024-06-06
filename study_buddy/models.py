@@ -17,4 +17,4 @@ class CompletedTask(models.Model):
     student = models.ForeignKey(User, on_delete=models.CASCADE)
     task = models.ForeignKey(Task, on_delete=models.CASCADE)
     completed_date = models.DateField(auto_now_add=True)
-    score = models.IntegerField(null=True, blank=True)
+    grade = models.IntegerField(null=True, blank=True)

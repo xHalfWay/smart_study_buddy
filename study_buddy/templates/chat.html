@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GigaChat</title>
+    <link rel="stylesheet" href="{% static 'chat_styles.css' %}">
+</head>
+<body>
+    <div class="content-container">
+        <form id="chat-form">
+            {% csrf_token %}
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="header-content">
+                        <div class="chat-title">GigaChat</div>
+                    </div>
+                </div>
+                <div class="chat-messages" id="chat-messages"></div>
+                <div class="chat-input">
+                    <input type="text" id="chat-input" placeholder="Напишите сообщение...">
+                    <button type="submit" id="chat-send">Отправить</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="profile-btn-container">
+            <a href="{% url 'profile' %}" class="return-profile-btn">Назад в профиль</a>
+        </div>
+    </div>
+    
+    <script src="{% static 'js/chat.js' %}"></script>
+</body>
+</html>

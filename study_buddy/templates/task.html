@@ -37,12 +37,14 @@
 
     <form id="complete-task-form" method="post">
         {% csrf_token %}
-        <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
         <button id="complete-task-btn" type="submit" class="complete-task-btn">Завершить задание</button>
     </form>
 
-    <a href="{% url 'profile' %}" class="return-btn">Вернуться в профиль</a>
-    <a href="{% url 'task_list' %}" class="return-btn">Вернуться к списку доступных заданий</a>
+    <div class="button-container">
+        <a href="{% url 'profile' %}" class="return-btn return-profile-btn">Вернуться в профиль</a>
+        <a href="{% url 'task_list' %}" class="return-btn return-task-list-btn">Вернуться к списку доступных заданий</a>
+    </div>
+    
 
     <script src="{% static 'js/task.js' %}"></script>
 </body>

@@ -18,6 +18,7 @@
             {% endif %}
             {% if user.groups.all.0.name == 'Ученик' %}
             <a href="{% url 'task_list' %}" class="task-list-btn">Список заданий</a>
+            <a href="{% url 'chat' %}" class="chat-btn">Перейти в чат</a>
             {% endif %}
             <a href="{% url 'change_password' %}" class="change-password-btn">Изменить пароль</a>
             <a href="{% url 'logout' %}" class="logout-btn">Выйти</a>

@@ -34,7 +34,16 @@ urlpatterns = [
     path('task/<int:task_id>/', views.task_view, name='task_view'),
     path('tasks/', views.task_list, name='task_list'),
     path('task/<int:task_id>/complete/', views.complete_task, name='complete_task'),
-
+    path('save_completed_task/', views.save_completed_task, name='save_completed_task'),
+    path('chat/', views.chat_view, name='chat'),
+    path('gigachat_interaction/', views.gigachat_interaction, name='gigachat_interaction'),
+    
 
     
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
+
+# ключи
+                #  client id 8b5d2a59-fe16-4125-8538-1584b5327d6f
+                #  scope GIGACHAT_API_PERS
+                #  client secret 736910ec-7b72-46dd-8ce8-e9fb8f8b3f27
+                #  OGI1ZDJhNTktZmUxNi00MTI1LTg1MzgtMTU4NGI1MzI3ZDZmOjczNjkxMGVjLTdiNzItNDZkZC04Y2U4LWU5ZmI4ZjhiM2YyNw==

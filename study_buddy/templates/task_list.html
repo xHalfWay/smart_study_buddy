@@ -11,13 +11,15 @@
     <h1>Список доступных заданий</h1>
 
     <div class="task-container">
-        {% for task in tasks %}
-            <div class="task-card">
-                <h2>{{ task.title }}</h2>
-                <p>{{ task.description }}</p>
-                <a href="{% url 'task_view' task.id %}">Пройти задание</a>
-            </div>
-        {% endfor %}
+        <div class="task-wrapper">
+            {% for task in tasks %}
+                <div class="task-card">
+                    <h2>{{ task.title }}</h2>
+                    <p>{{ task.description }}</p>
+                    <a href="{% url 'task_view' task.id %}">Пройти задание</a>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 
     <a href="{% url 'profile' %}" class="return-btn">Вернуться в профиль</a>

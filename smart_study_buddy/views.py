@@ -145,22 +145,20 @@ def create_find_pair_task(request):
 
     return render(request, 'create_find_pair_task.html')
 
-@login_required
 def task_view(request, task_id):
     task = get_object_or_404(Task, pk=task_id)
     pairs = task.pair_set.all()
     if request.method == 'POST':
-        # score = calculate_score(correct_pairs, total_pairs) 
         completed_task = CompletedTask.objects.create(
             student=request.user,
             task=task,
             completed_date=timezone.now(),
-            score=0 # реализовать баллы
+            grade=None  # None calculate_grade(task)
         )
         completed_task.save()
+
         return redirect('task_list')
     return render(request, 'task.html', {'task': task, 'pairs': pairs})
-
 
 @login_required
 def task_list(request):
@@ -176,18 +174,75 @@ def complete_task(request, task_id):
     else:
         return HttpResponseBadRequest("Метод запроса не поддерживается")
 
-# def calculate_score(correct_pairs, total_pairs):
-#     if total_pairs == 0:
-#         return 0 
+from django.http import JsonResponse
+
+def save_completed_task(request):
+    if request.method == 'POST':
+        task_id = request.POST.get('taskId')
+
+        # task = Task.objects.get(pk=task_id)
+        # completed_task = CompletedTask.objects.create(student=request.user, task=task)
+
+        return JsonResponse({'message': 'Завершенное задание успешно сохранено'})
+    else:
+
+        return JsonResponse({'error': 'Метод запроса не поддерживается'}, status=400)    
+    
+def chat_view(request):
+    return render(request, 'chat.html')
+
+
+# test
+from django.http import JsonResponse
+from django.views.decorators.http import require_POST
+from django.views.decorators.csrf import csrf_exempt
+from langchain.schema import HumanMessage, SystemMessage
+from langchain_community.chat_models.gigachat import GigaChat
+import os
+
+@csrf_exempt
+@require_POST
+def gigachat_interaction(request):
+    try:
+        client_id = '8b5d2a59-fe16-4125-8538-1584b5327d6f'
+        client_secret = '736910ec-7b72-46dd-8ce8-e9fb8f8b3f27'
+
+        chat = GigaChat(credentials=(client_id, client_secret), verify_ssl_certs=False)
+
+        user_input = request.POST.get('message')
+        if not user_input:
+            return JsonResponse({'error': 'No message provided'}, status=400)
+
+        messages = [
+            SystemMessage(content="Ты эмпатичный бот-психолог, который помогает пользователю решить его проблемы."),
+            HumanMessage(content=user_input)
+        ]
+
+        res = chat(messages)
+        messages.append(res)
+
+        return JsonResponse({'response': res.content})
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+
+
+# def calculate_grade(task):
+
+#     correct_pairs_count = 0
+#     total_pairs_count = task.pair_set.count()
+
+#     for pair in task.pair_set.all():
+#         if pair.correct:
+#             correct_pairs_count += 1
+
+#     percentage_correct_pairs = (correct_pairs_count / total_pairs_count) * 100
+
+#     if percentage_correct_pairs >= 90:
+#         return 5  
+#     elif percentage_correct_pairs >= 70:
+#         return 4  
+#     elif percentage_correct_pairs >= 50:
+#         return 3 
 #     else:
-#         percentage_correct = (correct_pairs / total_pairs) * 100
-#         if percentage_correct >= 90:
-#             return 5
-#         elif percentage_correct >= 80:
-#             return 4
-#         elif percentage_correct >= 70:
-#             return 3
-#         elif percentage_correct >= 60:
-#             return 2
-#         else:
-#             return 1    
+#         return 2 

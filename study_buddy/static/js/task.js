@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let totalPairs = 0;
 
     elements.forEach(element => {
-        element.onclick = function() {
+        element.addEventListener('click', () => {
             if (!selectedElement) {
                 selectedElement = element;
                 element.classList.add('selected');
@@ -42,15 +42,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     correctPairs++;
                     totalPairs++;
                     updateResults();
-
+                    // Отправляем AJAX-запрос на сервер для сохранения выполненного задания
                     const taskId = selectedElement.dataset.taskId;
                     const csrfToken = document.querySelector('input[name="csrfmiddlewaretoken"]').value;
                     const url = '/save_completed_task/';
                     const data = {
                         taskId: taskId,
-                        csrfmiddlewaretoken: csrfToken,
-                        correctPairs: correctPairs,
-                        totalPairs: totalPairs
+                        csrfmiddlewaretoken: csrfToken
                     };
                     fetch(url, {
                         method: 'POST',
@@ -79,9 +77,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 selectedElement = null;
             }
-        };
+        });
     });
-    
+
     function updateResults() {
         const resultElement = document.getElementById('results');
         resultElement.textContent = `Правильно: ${correctPairs}, Неправильно: ${totalPairs - correctPairs}`;
