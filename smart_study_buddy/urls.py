@@ -41,8 +41,3 @@ urlpatterns = [
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
 
-# ключи
-                #  client id 8b5d2a59-fe16-4125-8538-1584b5327d6f
-                #  scope GIGACHAT_API_PERS
-                #  client secret 736910ec-7b72-46dd-8ce8-e9fb8f8b3f27
-                #  OGI1ZDJhNTktZmUxNi00MTI1LTg1MzgtMTU4NGI1MzI3ZDZmOjczNjkxMGVjLTdiNzItNDZkZC04Y2U4LWU5ZmI4ZjhiM2YyNw==

@@ -16,8 +16,6 @@ body {
   font-family: Trebuchet MS, Helvetica;
 }
 
-/* Шапка сайта */
-
 header {
   width: 100%;
   padding: 10px 0.5% 0px 0.5%;
@@ -82,7 +80,6 @@ header #logo span {
   margin-right: 7%;
 }
 
-/* Стили для фиксированной шапки */
 
 .fixed {
   z-index: 5000;
@@ -96,8 +93,6 @@ header.fixed #logo {
 
 .fixed #about a {color: #343434}
 .fixed #about a:hover {color: #7c7c7c}
-
-/* Главный блок на сайте */
 
 #top {
   width: 100%;
@@ -145,8 +140,6 @@ header.fixed #logo {
   color: #ccc;
 }
 
-/* Блок с возможностями */
-
 #main {
   float: left;
   background-color: #f6f6f6;
@@ -184,9 +177,6 @@ header.fixed #logo {
 
 #main h2 {font-size: 3em}
 #main span {color: #a0a0a0}
-
-/* Блок с преимуществами */
-
 
 #overview {
     float: left;
@@ -250,85 +240,7 @@ header.fixed #logo {
     }
   }
   
-  /* Блок с контактами */
-  #contacts {
-    width: 100%;
-    float: left;
-    padding-bottom: 40px;
-    padding-top: 70px;
-    border-top: 4px solid #ccc;
-    background: #f4f4f4;
-  }
-  
-  h1, h2, h3, h4, h5 {
-    font-family: 'Roboto Slab', serif;
-    font-weight: lighter;
-  }
-  
-  #contacts h5 {font-size: 3em; color: #4f4f4f}
-  
-  #form_input {
-    margin-top: 15px;
-    font-size: 1.1em;
-  }
-  
-  @media (min-width: 1051px) {
-    #form_input {
-      width: 35%;
-      margin-left: 38%;
-    }
-  }
-  
-  @media (max-width: 1050px) {
-    #form_input {
-      width: 90%;
-      margin-left: 10%;
-    }
-  }
-  
-  #form_input label {
-    color: #505050;
-    cursor: pointer;
-    font-size: 1.4em;
-    font-family: 'Roboto Slab', serif;
-  }
-  
-  #form_input label > span {
-    color: #e87e7e;
-  }
-  
-  #form_input input,#form_input textarea {
-    margin-bottom: 10px;
-    width: 70%;
-    padding: 10px 2%;
-    border-radius: 7px;
-    border: 2px solid silver;
-    font-size: 0.9em;
-    color: #4a4a4a;
-  }
-  
-  #form_input input:focus, #form_input textarea:focus {
-    border-color: #333;
-  }
-  
-  .btn {
-    float: left;
-    border-radius: 5px;
-    padding: 5px 9px;
-    font-size: 1.2em;
-    background-color: #ec6550;
-    text-shadow: #454545 0 0 2px;
-    cursor: pointer;
-    color: white;
-    font-family: 'Roboto Slab', serif;
-  }
-  
-  .btn:hover {
-    background-color: #c15443;
-  }
-  
-  /* Вопросы и ответы */
-  
+
   #faq {
     background-color: #fff;
     border-top: 2px dashed #e4e3e3;

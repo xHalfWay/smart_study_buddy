@@ -16,7 +16,6 @@
       <div id="about">
         <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
         <a href="#" onclick="slowScroll('#overview')" title="Преимущества">Преимущества</a>
-        <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
         <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
         {% if not user.is_authenticated %}
         <a href="{% url 'register' %}" title="Регистрация">Регистрация</a>
@@ -38,7 +37,9 @@
         <span>Большой выбор обучения</span>
       </div>
       <div class="text">
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos impedit, ut vero commodi voluptate? Ipsam reiciendis, necessitatibus incidunt ipsa quis sapiente excepturi, optio iusto voluptatibus dolorem officia quidem, numquam eaque minus, autem praesentium rem architecto dolores. Ipsa unde id velit optio magni enim! Illum obcaecati, dolorem distinctio nemo, ipsum iure.</span>
+        <span>Веб-приложение "Умный друг для учебы" создано для улучшения взаимодействия между учителями и учениками, облегчая процесс создания и выполнения учебных заданий.
+           Учителя могут создавать различные задания, а ученики – выполнять их через удобный интерфейс.
+           Приложение также включает чат, подключенный к нейронной сети от Сбербанка, позволяя ученикам консультироваться по учебным вопросам в реальном времени.</span>
       </div>
     </div>
   
@@ -48,7 +49,7 @@
   
       <div class="img">
         <img src="{% static 'internet.jpg' %}" alt="">
-        <span>Прохождение заданий от сайта</span>
+        <span>Общение с чатом "Умный друг для учебы"</span>
       </div>
       <div class="img">
         <img src="{% static 'questions.jpg' %}" alt="">
@@ -56,46 +57,27 @@
       </div>
     </div>
   
-    <div id="contacts">
-      <center><h5>Обратная связь</h5></center>
-      <form id="form_input">
-        <label for="name">Имя <span>*</span></label><br>
-        <input type="text" placeholder="Введите имя" name="name" id="name"><br>
-        <label for="email">Ваша почта <span>*</span></label><br>
-              <input type="email" placeholder="Введите email" name="email" id="email"><br>
-              <label for="message">Сообщение <span>*</span></label><br>
-              <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
-              <div id="mess_send" class="btn">Отправить</div>
-      </form>
-    </div>
-  
     <div id="faq">
       <div>
         <span class="title">Управление</span><br>
         <span class="heading">Как создать задание?</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-        <span class="heading">Как создать задание?</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-        <span class="heading">Как создать задание?</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+        <p>Для создания задания учитель должен войти в систему и перейти в раздел "Создание заданий". В этом разделе можно выбрать тип задания, например, "найди пару", 
+          и заполнить необходимые поля. После сохранения задание станет доступным для выполнения учениками.</p>
+        <span class="heading">Как использовать чат?</span>
+        <p>Для использования чата ученики должны войти в систему и перейти в раздел "Умный друг для учебы".
+           В этом разделе можно задавать вопросы и получать ответы от нейронной сети, подключенной к системе.</p>
       </div>
       <div>
         <span class="title">Информация</span><br>
-        <span class="heading">Что входит в услуги сервиса</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-        <span class="heading">Что входит в услуги сервиса</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-        <span class="heading">Что входит в услуги сервиса</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+        <span class="heading">Что входит в услуги сервиса?</span>
+        <p>Сервис включает создание и выполнение учебных заданий, а также возможность общения с нейронной сетью для консультаций по учебным вопросам.</p>
+        <span class="heading">Какие типы заданий можно создавать?</span>
+        <p>Учителя могут создавать различные типы заданий, включая "найди пару", тесты с выбором ответа, задания на сопоставление и многое другое.</p>
       </div>
       <div>
-        <span class="title">Информация</span><br>
-        <span class="heading">Что входит в услуги сервиса</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-        <span class="heading">Что входит в услуги сервиса</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-        <span class="heading">Что входит в услуги сервиса</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
+        <span class="title">Безопасность</span><br>
+        <span class="heading">Как обеспечивается безопасность данных?</span>
+        <p>Все данные защищены с помощью современных методов шифрования. Доступ к системе осуществляется только через защищенные соединения, а все действия пользователей логируются для обеспечения безопасности.</p>
       </div>
     </div>
   

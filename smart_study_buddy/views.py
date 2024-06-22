@@ -13,8 +13,6 @@ from django.views.decorators.csrf import csrf_exempt
 from langchain.schema import HumanMessage, SystemMessage
 from langchain_community.chat_models.gigachat import GigaChat
 
-
-
 def register_view(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
@@ -99,22 +97,6 @@ def change_password(request):
         password_form = ChangePasswordForm()
     return render(request, 'change_password.html', {'form': password_form})  
 
-def change_password_view(request):
-    if request.method == 'POST':
-        form = ChangePasswordForm(request.POST)
-        if form.is_valid():
-            old_password = form.cleaned_data['old_password']
-            new_password = form.cleaned_data['new_password1']
-            if request.user.check_password(old_password):
-                request.user.set_password(new_password)
-                request.user.save()
-                return redirect('profile')
-            else:
-                form.add_error('old_password', 'Неверный пароль')
-    else:
-        form = ChangePasswordForm()
-    return render(request, 'change_password.html', {'form': form})
-
 def task_creation(request):
     return render(request, 'task_creation.html')
 
@@ -177,15 +159,9 @@ def complete_task(request, task_id):
     else:
         return HttpResponseBadRequest("Метод запроса не поддерживается")
 
-from django.http import JsonResponse
-
 def save_completed_task(request):
     if request.method == 'POST':
         task_id = request.POST.get('taskId')
-
-        # task = Task.objects.get(pk=task_id)
-        # completed_task = CompletedTask.objects.create(student=request.user, task=task)
-
         return JsonResponse({'message': 'Завершенное задание успешно сохранено'})
     else:
 

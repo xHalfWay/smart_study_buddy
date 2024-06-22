@@ -93,3 +93,47 @@ h1 {
 .return-btn:hover {
     background-color: #c15443;
 }
+
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 22px;
+    }
+    .task-card {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 20px;
+    }
+    .task-card {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 18px;
+    }
+    .task-card {
+        width: calc(100% - 20px); 
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 16px;
+    }
+    .task-card h2, .task-card p {
+        font-size: 16px;
+    }
+    .task-card a {
+        font-size: 1em;
+    }
+    .return-btn {
+        font-size: 1em;
+        width: 180px;
+    }
+}

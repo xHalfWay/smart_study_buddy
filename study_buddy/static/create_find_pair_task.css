@@ -38,10 +38,10 @@ body {
 
 #create_task_form .create-task-btn {
     display: block;
-    width: calc(100% - 10px); 
+    width: calc(100% - 10px);
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #35c3dc; 
+    background-color: #35c3dc;
     color: white;
     border: none;
     border-radius: 20px;
@@ -53,17 +53,15 @@ body {
 }
 
 #create_task_form .create-task-btn:hover {
-    background-color: #0056b3; 
+    background-color: #0056b3;
 }
-
-
 
 .pair .remove-pair-btn {
     display: block;
-    width: calc(100% - 10px); 
+    width: calc(100% - 10px);
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #dc3545; 
+    background-color: #dc3545;
     color: white;
     border: none;
     border-radius: 20px;
@@ -75,15 +73,15 @@ body {
 }
 
 .pair .remove-pair-btn:hover {
-    background-color: #c82333; 
+    background-color: #c82333;
 }
 
 .add-pair-btn {
     display: block;
-    width: calc(100% - 10px); 
+    width: calc(100% - 10px);
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #35dc75; 
+    background-color: #35dc75;
     color: white;
     border: none;
     border-radius: 20px;
@@ -139,12 +137,11 @@ body {
     border-radius: 5px;
 }
 
-
 .create-task-link {
-    display: block; 
-    width: calc(100% - 50px); 
+    display: block;
+    width: calc(100% - 50px);
     padding: 10px 20px;
-    margin-top: 100px; 
+    margin-top: 100px;
     background-color: rgb(34, 33, 31);
     color: white;
     border: none;
@@ -152,9 +149,56 @@ body {
     font-size: 1.2em;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    text-align: center; 
+    text-align: center;
 }
 
 .create-task-link:hover {
     background-color: #c15443;
+}
+
+
+@media (max-width: 768px) {
+    #create_task_form {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .create-task-btn,
+    .pair .remove-pair-btn,
+    .add-pair-btn {
+        font-size: 1em;
+    }
+
+    #create_task_form h1 {
+        font-size: 1.5em;
+    }
+
+    #create_task_form p {
+        font-size: 1em;
+    }
+
+    .pair label {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 576px) {
+    .create-task-btn,
+    .pair .remove-pair-btn,
+    .add-pair-btn {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    #create_task_form h1 {
+        font-size: 1.2em;
+    }
+
+    #create_task_form p {
+        font-size: 0.9em;
+    }
+
+    .pair label {
+        font-size: 0.9em;
+    }
 }
