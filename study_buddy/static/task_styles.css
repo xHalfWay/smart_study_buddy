@@ -35,7 +35,7 @@ p {
 }
 
 .element {
-    padding: 10px;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 8px;
     cursor: pointer; 
@@ -47,7 +47,7 @@ p {
     justify-content: center;
     text-align: center;
     overflow: hidden; 
-    margin: 10px 0; 
+    margin: 14px 0;
 }
 
 .element:hover {

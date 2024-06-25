@@ -176,7 +176,14 @@ header.fixed #logo {
 }
 
 #main h2 {font-size: 3em}
-#main span {color: #a0a0a0}
+#main span {
+    font-weight: 400;
+    font-family: Arimo, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #444;
+    margin-bottom: 40px;
+    line-height: 1.5em;
+}
 
 #overview {
     float: left;
@@ -271,20 +278,22 @@ header.fixed #logo {
     color: #a3a0ad;
     margin-bottom: 20px;
     font-size: 2.2em;
+    display: block;
   }
   
   #faq .heading {
     color: #7d7d7d;
-    font-size: 1.3em;
-    font-weight: bold;
+    font-size: 1.5em;
+    font-weight: 700;
   }
   
   #faq p {
     font-family: Arimo, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
-    color: #4a4a4a;
-    font-size: 0.95em;
+    color: #444;
+    font-size: 1.25em;
     margin-bottom: 40px;
+    line-height: 1.5em;
   }
 
 

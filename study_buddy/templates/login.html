@@ -15,15 +15,17 @@
         <p class="error">{{ form.non_field_errors }}</p>
         {% endif %}
         <label for="username">Логин пользователя <span>*</span></label><br>
+        <input type="text" placeholder="Введите логин" id="username" name="username">
         {% if form.errors.username %}
         <p class="error">{{ form.errors.username }}</p>
         {% endif %}
-        <input type="text" placeholder="Введите логин" id="username" name="username"><br>
+        <br>
         <label for="password">Пароль <span>*</span></label><br>
+        <input type="password" placeholder="Введите пароль" id="password" name="password">
         {% if form.errors.password %}
         <p class="error">{{ form.errors.password }}</p>
         {% endif %}
-        <input type="password" placeholder="Введите пароль" id="password" name="password"><br>
+        <br>
         <input type="submit" value="Войти">
         <a href="{% url 'index' %}" class="return-btn">Вернуться на главную</a>
         <p class="form-caption">У вас еще нет аккаунта? <a href="{% url 'register' %}">Зарегистрируйтесь</a></p>

@@ -1287,3 +1287,136 @@ Not Found: /favicon.ico
 "GET / HTTP/1.1" 200 5532
 "GET /register/ HTTP/1.1" 200 1669
 "GET /login/ HTTP/1.1" 200 1168
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 5459
+"GET /static/styles.css HTTP/1.1" 200 4634
+"GET /static/internet.jpg HTTP/1.1" 200 77417
+"GET /static/questions.jpg HTTP/1.1" 200 79781
+"GET /static/background.jpg HTTP/1.1" 200 1328775
+"GET /static/owl.jpg HTTP/1.1" 200 1711166
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"GET /profile/ HTTP/1.1" 200 943
+"GET /static/profile.css HTTP/1.1" 200 2394
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+"GET /task_creation/ HTTP/1.1" 200 1212
+"GET /static/custom_styles.css HTTP/1.1" 200 2366
+"GET /static/fill_blanks_image.jpg HTTP/1.1" 200 60860
+"GET /static/find_pair_image.jpg HTTP/1.1" 200 57024
+"GET /create_find_pair_task/ HTTP/1.1" 200 1101
+"GET /static/create_find_pair_task.css HTTP/1.1" 200 4082
+"GET /static/js/create_find_pair.js HTTP/1.1" 200 6110
+"GET /create_find_pair_task/ HTTP/1.1" 200 1101
+"GET /create_find_pair_task/ HTTP/1.1" 200 1101
+"GET /static/js/create_find_pair.js HTTP/1.1" 200 6110
+"GET /static/create_find_pair_task.css HTTP/1.1" 200 4279
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /create_find_pair_task/ HTTP/1.1" 302 0
+"GET /task_creation/ HTTP/1.1" 200 1435
+"GET /static/custom_styles.css HTTP/1.1" 200 2366
+"GET /static/find_pair_image.jpg HTTP/1.1" 200 57024
+"GET /static/fill_blanks_image.jpg HTTP/1.1" 200 60860
+"GET /create_find_pair_task/ HTTP/1.1" 200 1101
+"GET /static/create_find_pair_task.css HTTP/1.1" 304 0
+"POST /create_find_pair_task/ HTTP/1.1" 302 0
+"GET /task_creation/ HTTP/1.1" 200 1435
+"GET /profile/ HTTP/1.1" 200 943
+"GET /static/profile.css HTTP/1.1" 200 2394
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 5532
+"GET /static/styles.css HTTP/1.1" 200 4634
+"GET /static/internet.jpg HTTP/1.1" 200 77417
+"GET /static/questions.jpg HTTP/1.1" 200 79781
+"GET /static/background.jpg HTTP/1.1" 200 1328775
+"GET /static/owl.jpg HTTP/1.1" 200 1711166
+"GET /login/ HTTP/1.1" 200 1168
+"GET /static/auth_styles.css HTTP/1.1" 200 3153
+"GET /static/reg_background.jpg HTTP/1.1" 200 2124926
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 5459
+"GET /profile/ HTTP/1.1" 200 1013
+"GET /tasks/ HTTP/1.1" 200 2795
+"GET /static/task_list_styles.css HTTP/1.1" 200 2705
+"GET /task/166/ HTTP/1.1" 200 1914
+"GET /static/task_styles.css HTTP/1.1" 200 3364
+"GET /static/js/task.js HTTP/1.1" 200 3872
+"GET /static/doska.jpg HTTP/1.1" 200 249284
+"GET /tasks/ HTTP/1.1" 200 2795
+"GET /task/165/ HTTP/1.1" 200 2058
+"GET /media/0982defe6355994eeb7c72d892f86410.jpeg HTTP/1.1" 200 7892
+"GET /media/411687-na-logiku-35.jpg HTTP/1.1" 200 62063
+"GET /tasks/ HTTP/1.1" 200 2795
+"GET /task/166/ HTTP/1.1" 200 1914
+"GET /tasks/ HTTP/1.1" 200 2795
+"GET /profile/ HTTP/1.1" 200 1013
+"GET /chat/ HTTP/1.1" 200 3996
+"GET /static/chat_styles.css HTTP/1.1" 200 2745
+"POST /chat/ HTTP/1.1" 200 4923
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 5459
+"GET /static/styles.css HTTP/1.1" 200 4634
+"GET /static/internet.jpg HTTP/1.1" 200 77417
+"GET /static/questions.jpg HTTP/1.1" 200 79781
+"GET /static/background.jpg HTTP/1.1" 200 1328775
+"GET /static/owl.jpg HTTP/1.1" 200 1711166
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"GET /profile/ HTTP/1.1" 200 1013
+"GET /static/profile.css HTTP/1.1" 304 0
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+"GET /tasks/ HTTP/1.1" 200 2795
+"GET /static/task_list_styles.css HTTP/1.1" 200 2705
+"GET /profile/ HTTP/1.1" 200 1013
+"GET /chat/ HTTP/1.1" 200 3996
+"GET /static/chat_styles.css HTTP/1.1" 200 2745
+"POST /chat/ HTTP/1.1" 200 333
+"GET /chat/ HTTP/1.1" 200 3996
+"POST /chat/ HTTP/1.1" 200 3771
+"GET /profile/ HTTP/1.1" 200 1013
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 5532
+"GET /login/ HTTP/1.1" 200 1168
+"GET /static/auth_styles.css HTTP/1.1" 200 3153
+"GET /static/reg_background.jpg HTTP/1.1" 200 2124926
+"POST /login/ HTTP/1.1" 200 1442
+"POST /login/ HTTP/1.1" 200 1442
+"GET /static/auth_styles.css HTTP/1.1" 200 3153
+"GET /static/reg_background.jpg HTTP/1.1" 200 2124926
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 5459
+"GET /profile/ HTTP/1.1" 200 943
+"GET /task_creation/ HTTP/1.1" 200 1212
+"GET /static/custom_styles.css HTTP/1.1" 304 0
+"GET /create_find_pair_task/ HTTP/1.1" 200 1101
+"GET /static/create_find_pair_task.css HTTP/1.1" 200 4279
+"GET /static/js/create_find_pair.js HTTP/1.1" 200 6110
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 5459
+"GET /static/styles.css HTTP/1.1" 200 4634
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4112
+"GET /profile/ HTTP/1.1" 200 943
+"GET /static/profile.css HTTP/1.1" 304 0
+"GET /static/profile_background.jpg HTTP/1.1" 200 421593
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 5532
+"GET /register/ HTTP/1.1" 200 1669
+"GET /static/auth_styles.css HTTP/1.1" 200 3153
+"GET /static/reg_background.jpg HTTP/1.1" 200 2124926
+"GET /login/ HTTP/1.1" 200 1168
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 5459
+"GET /profile/ HTTP/1.1" 200 1013
+"GET /chat/ HTTP/1.1" 200 3996
+"GET /static/chat_styles.css HTTP/1.1" 200 2745
+"POST /chat/ HTTP/1.1" 200 1851
+"GET /profile/ HTTP/1.1" 200 1013
+Watching for file changes with StatReloader

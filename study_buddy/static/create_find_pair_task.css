@@ -156,6 +156,10 @@ body {
     background-color: #c15443;
 }
 
+.pair img {
+    max-width: 200px; /* Максимальная ширина изображения */
+    max-height: 200px; /* Максимальная высота изображения */
+}
 
 @media (max-width: 768px) {
     #create_task_form {
